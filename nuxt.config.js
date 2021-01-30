@@ -6,15 +6,18 @@ export default {
   head: {
     title: 'Portfolio - Matis Baguelin',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'author', content: 'Matis Baguelin'}
+      // google-site-verification
+      // icon for light mode
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/mb.png' }
     ]
   },
 

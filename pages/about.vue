@@ -9,7 +9,25 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      title: 'la page about'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'About page description'
+        }
+      ]
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
