@@ -1,13 +1,14 @@
 <template>
-  <div>
+  <div class="min-h-screen flex flex-col ">
     <AppBar />
-    <Nuxt />
+    <Nuxt class="flex-1 px-4 py-10"/>
     <Footer />
   </div>
 </template>
 
 <style>
 html {
-  @apply bg-gray-100;
+  scroll-behavior: smooth;
+  @apply bg-gray-900 text-white;
 }
 </style>
