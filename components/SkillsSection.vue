@@ -89,7 +89,7 @@
               icon: 'nuxtjs.svg',
             },
             {
-              name: 'TailwindCSS',
+              name: 'Tailwind CSS',
               icon: 'tailwindcss.svg',
             },
             {
