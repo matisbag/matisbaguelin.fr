@@ -3,10 +3,10 @@
     <div id="projects" class="lg:text-center">
       <h2 class="text-base text-emerald-500 font-semibold tracking-wide uppercase">Mes projets</h2>
       <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-100 sm:text-4xl">
-        A better way to send money
+        Repository
       </p>
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat mollitia nobis
+        Projets développé durant mon temps libre
       </p>
     </div>
 

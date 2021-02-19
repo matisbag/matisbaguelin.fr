@@ -9,8 +9,7 @@
         Mes années d'expériences m'ont permis de découvrir ses merveilleuses techno 😁
       </p>
     </div>
-
-    <skills :skills="predilectionsSkills"/>
+    <Skills :skills="predilectionsSkills"/>
 
     <p class="lg:text-center mt-8 text-3xl leading-8 font-extrabold tracking-tight text-gray-100 sm:text-4xl">
       Quelques expériences
@@ -19,7 +18,7 @@
       Technologies avec lesquelles j'ai déjà travaillé
     </p>
 
-    <skills :skills="othersSkills"/>
+    <Skills :skills="othersSkills"/>
 
 
 
@@ -30,7 +29,7 @@
       Outils que j'ai déjà utilisé
     </p>
 
-    <skills :skills="toolsSkills"/>
+    <Skills :skills="toolsSkills"/>
   </section>
 </template>
 
@@ -79,7 +78,7 @@
               icon: 'kotlin.svg',
             }
           ],
-          color: 'pink-900'
+          color: 'dark-pink'
           // else ?
         },
         toolsSkills: {
@@ -109,7 +108,7 @@
               icon: 'sass.svg',
             }
           ],
-          color: 'indigo-900'
+          color: 'dark-blue'
           // else ?
         },
       }
