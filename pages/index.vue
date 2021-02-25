@@ -5,6 +5,8 @@
     <ProjetsSection />
 
     <SkillsSection />
+
+    <ContactSection />
   </main>
     
 </template>
