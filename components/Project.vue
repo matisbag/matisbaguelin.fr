@@ -1,25 +1,17 @@
 <template>
-  <article class="max-w-max overflow-hidden rounded-lg shadow-lg my-4 lg:w-2/4 flex flex-col">
-    <a href="#">
-      <img alt="Placeholder" class="block h-auto w-full" src="~/assets/conference.png">
-    </a>
-    <div class="shadow sm:px-10 sm:py-6 py-4 px-4 bg-black flex flex-col flex-1 justify-between">
-      <div class="flex">
-        <div v-if="project.github" class="text-sm font-bold flex-initial text-white mr-2">
-          <img src="../assets/github.svg" alt="icon github" class="w-7 h-7 mx-auto">
-        </div>
-      <div v-for="used in project.used" :key="used" class="content-center inline-block text-sm font-bold flex-initial bg-white text-black px-2 py-1 mr-2 rounded-3xl">{{used}}</div>
-      </div>
-      
-      <h3 class="text-xl text-white font-semibold pb-3 mt-2">{{project.title}}</h3>
-      <p class="text-base text-gray-200 pb-3 font-normal flex-1">{{project.description}}</p>
-      <nuxt-link :to="'/projects/' + project.routeName" class="group text-emerald-500 font-bold">
-        Voir le projet <svg class="inline-block text-xl ml-1 group-hover:ml-2 transition-all duration-150 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </svg>
-      </nuxt-link>
+  <li class="relative group flex flex-col rounded-lg border-8 shadow-lg max-w-5xl my-10 lg:mb-16 transform hover:scale-105 duration-500">
+    <img src="https://res.cloudinary.com/maizzle/image/upload/v1612438412/templates/ce-teams-email-templates.png" class="rounded-lg">
+    <nuxt-link :to="'/projects/' + project.routeName" class="absolute flex flex-col items-center justify-center w-full h-full rounded-lg p-8 bg-gradient-to-tr from-blue-500 to-green-400 opacity-0 group-hover:opacity-90 transition-opacity duration-150">
+      <h3 class="text-3xl leading-9 font-bold text-white">{{project.title}}</h3>
+      <span class="block text-sm italic font-thin text-white">{{project.description}}</span>
+    </nuxt-link>
+  </li>
+  <!-- <div class="flex">
+    <div v-if="project.github" class="text-sm font-bold flex-initial text-white mr-2">
+      <img src="../assets/github.svg" alt="icon github" class="w-7 h-7 mx-auto">
     </div>
-  </article>
+    <div v-for="used in project.used" :key="used" class="content-center inline-block text-sm font-bold flex-initial bg-white text-black px-2 py-1 mr-2 rounded-3xl">{{used}}</div>
+  </div> -->
 </template>
 
 <script>

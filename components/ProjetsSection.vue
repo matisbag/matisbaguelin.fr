@@ -10,17 +10,18 @@
       </p>
     </div>
 
-    <section class="lg:flex lg:space-x-4">
-      <project v-for="project in projects" :key="project.routeName" :project="project"/>
-    </section>
-    
+    <ul class="flex flex-col items-center space-y-7 mt-2">
+      <project v-for="project in projects" :key="project.routeName" :project="project" />
+    </ul>
   </section>
 </template>
 
 <script>
 import Project from './Project.vue'
 export default {
-  components: { Project },
+  components: {
+    Project
+  },
   data() {
     return {
       projects: []

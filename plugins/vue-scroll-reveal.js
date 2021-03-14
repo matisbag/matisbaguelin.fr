@@ -8,8 +8,4 @@ Vue.use(VueScrollReveal, {
   scale: 0.95,
   distance: '10px',
   mobile: false,
-  reset: true,
-  viewOffset: {
-    top: -10,
-  },
 });
