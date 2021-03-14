@@ -1,7 +1,7 @@
 <template>
-  <li class="relative group flex flex-col rounded-lg border-8 shadow-lg max-w-5xl my-10 lg:mb-16 transform hover:scale-105 duration-500">
-    <img src="https://res.cloudinary.com/maizzle/image/upload/v1612438412/templates/ce-teams-email-templates.png" class="rounded-lg">
-    <nuxt-link :to="'/projects/' + project.routeName" class="absolute flex flex-col items-center justify-center w-full h-full rounded-lg p-8 bg-gradient-to-tr from-blue-500 to-green-400 opacity-0 group-hover:opacity-90 transition-opacity duration-150">
+  <li class="relative group flex flex-col rounded-lg border-8 border-black shadow-md max-w-5xl my-10 lg:mb-16 transform hover:scale-105 duration-500">
+    <img src="https://res.cloudinary.com/maizzle/image/upload/v1612438412/templates/ce-teams-email-templates.png">
+    <nuxt-link :to="'/projects/' + project.routeName" class="absolute flex flex-col items-center justify-center w-full h-full p-8 bg-gradient-to-tr from-blue-500 to-green-400 opacity-0 group-hover:opacity-90 transition-opacity duration-150">
       <h3 class="text-3xl leading-9 font-bold text-white">{{project.title}}</h3>
       <span class="block text-sm italic font-thin text-white">{{project.description}}</span>
     </nuxt-link>
