@@ -1,9 +1,9 @@
 <template>
   <main>
-    <Project v-if="project[0]" :project="project[0]"/>
+    <!-- <Project v-if="project" :project="project"/>
     <div v-else>
       <p>bonjour a tous</p>
-    </div>
+    </div> -->
   </main>
 </template>
 
@@ -15,16 +15,16 @@ export default {
     }
   },
   created() {
-    this.project = this.$store.state.projects.projects.filter (project => project.routeName === this.$route.params.project)
+    this.project = this.$store.state.projects.projects.filter(project => project.routeName === this.$route.params.project)[0]
   },
   head() {
     return {
-      title: 'Matis Baguelin - ' + this.project[0].title,
+      title: 'Matis Baguelin - ' + this.project.title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.project[0].description
+          content: this.project.description
         }
       ]
     }

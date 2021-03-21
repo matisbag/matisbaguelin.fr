@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         emerald: colors.emerald,
         gray: colors.trueGray,
-        'dark-green': '#011711',
+        'dark-green': '#02241b',
         'dark-pink' : '#260713',
         'dark-blue' : '#0f0d26'
       },
