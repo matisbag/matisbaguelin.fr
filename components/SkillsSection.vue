@@ -20,8 +20,6 @@
 
     <Skills :skills="othersSkills"/>
 
-
-
     <p class="lg:text-center mt-8 text-3xl leading-8 font-extrabold tracking-tight text-gray-100 sm:text-4xl">
       Outils
     </p>
@@ -49,15 +47,15 @@
           skills: [
             {
               name: 'Vue.js',
-              icon: 'vuejs.svg'
+              icon: 'icons/vuejs.svg'
             },
             {
               name: 'Laravel',
-              icon: 'laravel.svg'
+              icon: 'icons/laravel.svg'
             },
             {
               name: 'Node.js',
-              icon: 'nodejs.svg'
+              icon: 'icons/nodejs.svg'
             }
           ],
           color: 'dark-green'
@@ -67,15 +65,15 @@
           skills: [
             {
               name: 'Angular',
-              icon: 'angular.svg',
+              icon: 'icons/angular.svg',
             },
             {
               name: 'Symfony',
-              icon: 'symfony.svg',
+              icon: 'icons/symfony.svg',
             },
             {
               name: 'Kotlin',
-              icon: 'kotlin.svg',
+              icon: 'icons/kotlin.svg',
             }
           ],
           color: 'dark-pink'
@@ -85,27 +83,27 @@
           skills: [
             {
               name: 'NuxtJS',
-              icon: 'nuxtjs.svg',
+              icon: 'icons/nuxtjs.svg',
             },
             {
               name: 'Tailwind CSS',
-              icon: 'tailwindcss.svg',
+              icon: 'icons/tailwindcss.svg',
             },
             {
               name: 'Vuetify',
-              icon: 'vuetify.svg',
+              icon: 'icons/vuetify.svg',
             },
             {
               name: 'Git',
-              icon: 'git.svg',
+              icon: 'icons/git.svg',
             },
             {
               name: 'GitKraken',
-              icon: 'gitkraken.svg',
+              icon: 'icons/gitkraken.svg',
             },
             {
               name: 'Sass',
-              icon: 'sass.svg',
+              icon: 'icons/sass.svg',
             }
           ],
           color: 'dark-blue'
