@@ -3,7 +3,7 @@
     <article class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div class="w-full flex flex-col items-center">
         <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">{{ project.title }}</h1>
-        <img class="max-w-5xl rounded-lg" src="~/assets/conference.png">
+        <img class="max-w-5xl w-full rounded-lg" :src="require(`~/assets/${project.image}`)">
       </div>
       <div class="py-6">
         <p class="text-gray-200 text-sm lg:text-lg">{{project.description}}</p>

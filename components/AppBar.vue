@@ -1,6 +1,6 @@
 <template>
   <header> <!-- bg-white shadow-lg w-full fixed -->
-    <nav class="bg-gray-800 w-full shadow-md">
+    <nav class="bg-gray-900 w-full">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between">
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -27,10 +27,10 @@
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4 sm:items-stretch">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#about" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-900 duration-100">About</a>
-              <a href="#projects" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-900 duration-100">Projects</a>
-              <a href="#skills" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-900 duration-100">Skills</a>
-              <a href="#contact" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-900 duration-100">Contact</a>
+              <a href="#about" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-800 duration-100">About</a>
+              <a href="#projects" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-800 duration-100">Projects</a>
+              <a href="#skills" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-800 duration-100">Skills</a>
+              <a href="#contact" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-800 duration-100">Contact</a>
             </div>
           </div>
         </div>
@@ -40,9 +40,10 @@
       <div :class="menuOn ? 'block' : 'hidden'" class="sm:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a href="#about" class="text-gray-300 hover:bg-gray-900 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">About</a>
-          <a href="#projects" class="text-gray-300 hover:bg-gray-900 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-          <a href="#skills" class="text-gray-300 hover:bg-gray-900 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+          <a href="#about" class="text-gray-300 hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">About</a>
+          <a href="#projects" class="text-gray-300 hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+          <a href="#skills" class="text-gray-300 hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+          <a href="#contact" class="text-gray-300 hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
         </div>
       </div>
     </nav>
