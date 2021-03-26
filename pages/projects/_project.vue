@@ -6,7 +6,7 @@
         <img class="max-w-5xl w-full rounded-lg" :src="require(`~/assets/${project.image}`)">
       </div>
       <div class="py-6">
-        <p class="text-gray-200 text-sm lg:text-lg">{{project.description}}</p>
+        <p class="text-gray-200 text-sm lg:text-lg" v-html="project.description"></p>
       </div>
     </article>
     

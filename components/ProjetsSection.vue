@@ -10,7 +10,7 @@
       </p>
     </div>
 
-    <ul class="flex flex-col items-center space-y-7 mt-2">
+    <ul class="flex flex-col items-center space-y-16 mt-2">
       <project v-for="project in projects" :key="project.routeName" :project="project" />
     </ul>
   </section>
