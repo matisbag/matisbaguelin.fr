@@ -47,15 +47,15 @@
           skills: [
             {
               name: 'Vue.js',
-              icon: 'icons/vuejs.svg'
+              icon: 'icons/vuejs'
             },
             {
               name: 'Laravel',
-              icon: 'icons/laravel.svg'
+              icon: 'icons/laravel'
             },
             {
               name: 'Node.js',
-              icon: 'icons/nodejs.svg'
+              icon: 'icons/nodejs'
             }
           ],
           color: 'dark-green'
@@ -65,15 +65,15 @@
           skills: [
             {
               name: 'Angular',
-              icon: 'icons/angular.svg',
+              icon: 'icons/angular',
             },
             {
               name: 'Symfony',
-              icon: 'icons/symfony.svg',
+              icon: 'icons/symfony',
             },
             {
               name: 'Kotlin',
-              icon: 'icons/kotlin.svg',
+              icon: 'icons/kotlin',
             }
           ],
           color: 'dark-pink'
@@ -83,27 +83,27 @@
           skills: [
             {
               name: 'NuxtJS',
-              icon: 'icons/nuxtjs.svg',
+              icon: 'icons/nuxtjs',
             },
             {
               name: 'Tailwind CSS',
-              icon: 'icons/tailwindcss.svg',
+              icon: 'icons/tailwindcss',
             },
             {
               name: 'Vuetify',
-              icon: 'icons/vuetify.svg',
+              icon: 'icons/vuetify',
             },
             {
               name: 'Git',
-              icon: 'icons/git.svg',
+              icon: 'icons/git',
             },
             {
               name: 'GitKraken',
-              icon: 'icons/gitkraken.svg',
+              icon: 'icons/gitkraken',
             },
             {
               name: 'Sass',
-              icon: 'icons/sass.svg',
+              icon: 'icons/sass',
             }
           ],
           color: 'dark-blue'

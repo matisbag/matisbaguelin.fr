@@ -8,7 +8,7 @@
         </p>
       </div>
       <div class="w-full flex flex-col items-center">
-        <img class="max-w-5xl w-full rounded-lg" :src="require(`~/assets/${project.image}`)">
+        <img class="max-w-5xl w-full rounded-lg" :src="require(`~/assets/${project.image}.png`)">
       </div>
       <div class="py-6">
         <a :href="project.github">Github</a>
