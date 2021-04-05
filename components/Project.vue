@@ -1,5 +1,5 @@
 <template>
-  <li class="relative group flex flex-col rounded-lg max-w-5xl transform sm:hover:scale-105 duration-500">
+  <li class="relative group flex flex-col rounded-lg max-w-5xl transform sm:hover:scale-105 duration-500" v-scroll-reveal>
     <nuxt-link :to="'/projects/' + project.routeName">
       <img class="rounded-lg" :src="require(`~/assets/${project.image}`)">
       <div>

@@ -11,7 +11,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        emerald: colors.emerald,
         gray: colors.trueGray,
         'dark-green': '#011c15',
         'dark-pink' : '#260713',
