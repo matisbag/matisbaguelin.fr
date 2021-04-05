@@ -15,7 +15,7 @@
       </p>
       <div class="mt-8 flex justify-center">
         <div class="inline-flex rounded-md shadow">
-          <a href="https://github.com/MatisBag/" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-emerald-500 duration-500">
+          <a href="https://github.com/MatisBag/" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-green-500 duration-500">
             Github &#160;
             <img src="~/assets/icons/github.svg" alt="github icon" class="h-6 w-6">
           </a>

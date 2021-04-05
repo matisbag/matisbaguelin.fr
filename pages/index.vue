@@ -6,7 +6,7 @@
 
     <SkillsSection />
 
-    <ContactSection />
+    <!-- <ContactSection /> -->
   </main>
     
 </template>

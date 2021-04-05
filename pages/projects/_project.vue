@@ -1,28 +1,30 @@
 <template>
   <main class="flex-1 px-4 py-10">
     <article class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center">
+        <h2 class="text-base text-green-500 font-semibold tracking-wide uppercase">{{ project.title }}</h2>
+        <p class="my-2 text-3xl leading-8 font-bold tracking-tight text-gray-100 sm:text-4xl">
+          {{ project.desc }}
+        </p>
+      </div>
       <div class="w-full flex flex-col items-center">
-        <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">{{ project.title }}</h1>
         <img class="max-w-5xl w-full rounded-lg" :src="require(`~/assets/${project.image}`)">
       </div>
       <div class="py-6">
-        <p class="text-gray-200 text-sm lg:text-lg" v-html="project.description"></p>
+        <a :href="project.github">Github</a>
+        <a :href="project.link">Voir le projet</a>
+        <p class="text-white lg:text-lg font-medium text-justify" v-html="project.description"></p>
       </div>
     </article>
-    
   </main>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      project: []
+  computed: {
+    project () {
+      return this.$store.state.projects.projects.filter(project => project.routeName === this.$route.params.project)[0]
     }
-  },
-  created() {
-    this.project = this.$store.state.projects.projects.filter(project => project.routeName === this.$route.params.project)[0]
-    console.log(this.project);
   },
   head() {
     return {

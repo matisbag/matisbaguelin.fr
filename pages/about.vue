@@ -40,7 +40,7 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 .card {
-  @apply p-10 rounded-lg text-emerald-500 bg-emerald-100 shadow-lg;
+  @apply p-10 rounded-lg text-green-500 bg-green-100 shadow-lg;
   .title {
     @apply text-6xl font-bold;
   }
