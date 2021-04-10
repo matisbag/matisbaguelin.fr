@@ -22,7 +22,8 @@ module.exports = {
     extend: {
       margin: ['group-hover'],
       opacity: ['group-hover'],
-      scale: ['group-hover']
+      scale: ['group-hover'],
+      borderRadius: ['hover']
     },
   },
   plugins: [require("@tailwindcss/forms")],

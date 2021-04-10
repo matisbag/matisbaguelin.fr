@@ -9,7 +9,7 @@
         </h1>
       </h2>
       <p class="mt-3 max-w-md mx-auto text-base text-gray-300 font-medium sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-        Jeune développeur depuis 2020, je suis passionné par le développement web.
+        Jeune développeur depuis fin 2019, je suis passionné par le développement web.
         <br class="hidden xl:inline-block">
         Mes frameworks favoris sont : Vue.js et Laravel !
       </p>

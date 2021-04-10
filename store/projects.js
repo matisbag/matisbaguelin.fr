@@ -8,13 +8,13 @@ export const state = () => ({
       image: 'projects/conference',
       link: 'http://conference.matisbaguelin.fr/',
       github: 'https://github.com/MatisBag/The-conference',
-      techno: ['HTML', 'CSS', 'JS']
+      techno: ['HTML', 'CSS', 'JS - jQuery']
     },
     {
       routeName: 'the-blog',
       title: 'The Blog',
-      desc: 'Blog avec espace membre - commentaire',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit !',
+      desc: 'Blog avec espace membres - commentaire',
+      description: 'L\'objectif était de créer un blog avec un espace membres pour pouvoir par la suite écrire des commentaires.',
       image: 'projects/theblog',
       link: 'http://mbaguelin.eemi.tech/BDD/blog/',
       github: 'https://github.com/MatisBag/tp-blog',
