@@ -6,7 +6,7 @@
         Techno de prédilections
       </p>
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-        Mes années d'expériences m'ont permis de découvrir ses merveilleuses techno 😁
+        Mes années d'expériences m'ont permis de découvrir ces merveilleuses techno 😁
       </p>
     </div>
     <Skills :skills="predilectionsSkills"/>
@@ -15,7 +15,7 @@
       Quelques expériences
     </p>
     <p class="lg:text-center mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-      Technologies avec lesquelles j'ai déjà travaillé
+      Technologies avec lesquelles j'ai déjà travaillées
     </p>
 
     <Skills :skills="othersSkills"/>
@@ -24,7 +24,7 @@
       Outils
     </p>
     <p class="lg:text-center mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-      Outils que j'ai déjà utilisé
+      Outils que j'ai déjà utilisés
     </p>
 
     <Skills :skills="toolsSkills"/>
