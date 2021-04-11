@@ -2,6 +2,9 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
 
+  // https://fr.nuxtjs.org/docs/2.x/features/deployment-targets/
+  target: 'server',
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Portfolio - Matis Baguelin',
