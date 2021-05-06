@@ -2,7 +2,7 @@
   <section class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div id="projects" class="lg:text-center">
       <h2 class="text-base text-green-500 font-semibold tracking-wide uppercase">Mes projets</h2>
-      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-100 sm:text-4xl">
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight dark:text-gray-100 sm:text-4xl">
         Repository
       </p>
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
@@ -31,8 +31,8 @@ export default {
     this.loadData()
   },
   methods: {
-    async loadData() {
-      this.projects = await this.$store.state.projects.projects
+    loadData() {
+      this.projects = this.$store.state.projects.projects
     }
   },
 }

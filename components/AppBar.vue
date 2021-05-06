@@ -1,6 +1,6 @@
 <template>
   <header> <!-- bg-white shadow-lg w-full fixed -->
-    <nav class="bg-gray-900 w-full">
+    <nav class="w-full">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between">
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -20,17 +20,18 @@
           <div class="flex-1 flex items-center justify-center sm:justify-start py-6 sm:py-10">
             <nuxt-link to="/">
               <div class="flex-shrink-0 flex items-center">
-                <img class="h-12 w-auto" src="~/assets/d-home-icon.png" alt="Matis Baguelin">
+                <img class="h-12 w-auto hidden dark:block" src="~/assets/d-home-icon.png" alt="Matis Baguelin">
+                <img class="h-12 w-auto block dark:hidden" src="~/assets/home-icon.png" alt="Matis Baguelin">
               </div>
             </nuxt-link>
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4 sm:items-stretch">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <nuxt-link to="/#about" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-800 duration-100">About</nuxt-link>
-              <nuxt-link to="/#projects" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-800 duration-100">Projects</nuxt-link>
-              <nuxt-link to="/#skills" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-800 duration-100">Skills</nuxt-link>
-              <!-- <nuxt-link to="/#contact" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-800 duration-100">Contact</nuxt-link> -->
+              <nuxt-link to="/#about" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-100">About</nuxt-link>
+              <nuxt-link to="/#projects" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-100">Projects</nuxt-link>
+              <nuxt-link to="/#skills" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-100">Skills</nuxt-link>
+              <!-- <nuxt-link to="/#contact" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-100">Contact</nuxt-link> -->
             </div>
           </div>
         </div>
@@ -40,10 +41,10 @@
       <div :class="menuOn ? 'block' : 'hidden'" class="sm:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <nuxt-link to="/#about" class="text-gray-300 hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">About</nuxt-link>
-          <nuxt-link to="/#projects" class="text-gray-300 hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Projects</nuxt-link>
-          <nuxt-link to="/#skills" class="text-gray-300 hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Skills</nuxt-link>
-          <!-- <nuxt-link to="/#contact" class="text-gray-300 hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Contact</nuxt-link> -->
+          <nuxt-link to="/#about" class="text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">About</nuxt-link>
+          <nuxt-link to="/#projects" class="text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Projects</nuxt-link>
+          <nuxt-link to="/#skills" class="text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Skills</nuxt-link>
+          <!-- <nuxt-link to="/#contact" class="text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Contact</nuxt-link> -->
         </div>
       </div>
     </nav>
