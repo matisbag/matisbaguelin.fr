@@ -5,10 +5,10 @@
       <div>
         <div class="flex space-x-2 my-1">
           <span v-if="project.github" class="flex items-center px-1"><img src="~/assets/icons/github.svg" alt="icon github" class="h-6"></span>
-          <span v-for="techno in project.techno" :key="techno" class="py-1 px-4 bg-black font-medium rounded-xl">{{techno}}</span>
+          <span v-for="techno in project.techno" :key="techno" class="py-1 px-4 bg-gray-800 text-white font-medium rounded-xl">{{techno}}</span>
         </div>
         <h3 class="mb-2 font-bold text-xl lg:text-2xl">{{project.title}}</h3>
-        <p class="text-gray-200 text-sm lg:text-lg">{{project.desc}}</p>
+        <p class="text-sm lg:text-lg">{{project.desc}}</p>
       </div>
     </nuxt-link>
   </li>

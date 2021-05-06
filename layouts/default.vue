@@ -9,6 +9,6 @@
 <style>
 html {
   scroll-behavior: smooth;
-  @apply bg-gray-900 text-white;
+  @apply bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white;
 }
 </style>

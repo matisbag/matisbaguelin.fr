@@ -1,7 +1,7 @@
 <template>
   <main class="flex justify-center items-center max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div>
-      <h1 v-if="error.statusCode === 404" class="text-gray-200 text-5xl md:text-7xl lg:text-9xl font-bold pr-4 duration-700">Erreur 404</h1>
+      <h1 v-if="error.statusCode === 404" class="text-gray-200 text-5xl md:text-7xl lg:text-9xl font-bold pr-4 duration-700">Erreur {{ error.statusCode }}</h1>
       <h1 v-else class="text-gray-200 text-5xl md:text-7xl lg:text-9xl font-bold pr-4 duration-700">Erreur</h1>
       <NuxtLink to="/" class="text-base sm:text-xl font-semibold"><span class="text-green-500">/</span> <span class="italic transform hover:translate-x-4 duration-200">Home page</span></NuxtLink>
     </div>
@@ -11,7 +11,7 @@
 <script>
   export default {
     props: ['error'],
-    layout: 'error' // you can set a custom layout for the error page
+    layout: 'default' // you can set a custom layout for the error page
   }
 </script>
 

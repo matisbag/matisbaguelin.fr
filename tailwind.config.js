@@ -10,7 +10,7 @@ module.exports = {
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -26,7 +26,8 @@ module.exports = {
       margin: ['group-hover'],
       opacity: ['group-hover'],
       scale: ['group-hover'],
-      borderRadius: ['hover']
+      borderRadius: ['hover'],
+      display: ['dark']
     },
   },
   plugins: [require("@tailwindcss/forms")],
