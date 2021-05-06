@@ -1,10 +1,10 @@
 <template>
   <main>
-    <About />
+    <About></About>
 
-    <ProjetsSection />
+    <ProjetsSection></ProjetsSection>
 
-    <SkillsSection />
+    <SkillsSection></SkillsSection>
 
     <!-- <ContactSection /> -->
   </main>

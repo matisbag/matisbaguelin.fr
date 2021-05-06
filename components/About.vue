@@ -1,16 +1,15 @@
 <template>
   <section id="about" class="max-w-7xl mx-auto py-12 px-4 sm:px-6 sm:py-24 lg:py-36 lg:px-8">
     <div class="text-center">
-      <h2 class="text-5xl sm:text-7xl md:text-8xl font-semibold text-gray-100">
-        <span class="font-light tracking-wide">Portfolio</span>
-        <br class="md:hidden">
+      <div class="text-5xl sm:text-7xl md:text-8xl font-semibold text-gray-100">
+        <h2 class="font-light tracking-wide">Portfolio</h2>
         <h1 class="text-gradient bg-gradient-to-r from-green-400 to-blue-500 inline-block font-bold leading-snug">
           Matis Baguelin
         </h1>
-      </h2>
+      </div>
       <p class="mt-3 max-w-md mx-auto text-base text-gray-300 font-medium sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
         Jeune développeur depuis fin 2019, je suis passionné par le développement web.
-        <br class="hidden xl:inline-block">
+        <br class="hidden xl:inline-block" />
         Mes frameworks favoris sont : Vue.js et Laravel !
       </p>
       <div class="mt-8 flex justify-center">
