@@ -10,19 +10,19 @@
       </p>
     </div>
     <form class="mt-2 space-y-4 flex flex-col items-center" @submit.prevent="sendEmail">
-      <label class="w-full max-w-3xl" v-scroll-reveal>
+      <label class="w-full max-w-3xl">
         <span class="sr-only">Nom</span>
         <input type="text" placeholder="Ton nom" v-model="name" required />
       </label>
-      <label class="w-full max-w-3xl" v-scroll-reveal>
+      <label class="w-full max-w-3xl">
         <span class="sr-only">Adresse E-mail</span>
         <input type="email" placeholder="Ton mail" v-model="email" required />
       </label>
-      <label class="w-full max-w-3xl" v-scroll-reveal>
+      <label class="w-full max-w-3xl">
         <span class="sr-only">Texte</span>
         <textarea type="text" placeholder="Contenu" v-model="content" required class="h-28"/>
       </label>
-      <div class="w-full max-w-3xl" v-scroll-reveal>
+      <div class="w-full max-w-3xl">
         <button class="btn justify-self-start" type="submit">Envoyer</button>
       </div>
     </form>
