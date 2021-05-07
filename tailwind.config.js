@@ -9,7 +9,7 @@ module.exports = {
       './nuxt.config.{js,ts}',
     ],
     options: {
-      safelist: ['/^sm:grid-cols-/'],
+      safelist: ['/^grid-cols-/'],
     }
 },
   darkMode: "media", // or 'media' or 'class'
