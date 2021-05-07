@@ -15,7 +15,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Portfolio de Matis Baguelin, Etudiant et développeur full-stack (Vue.js - Laravel) à Paris.' },
-      { name: 'author', content: 'Matis Baguelin'}
+      { name: 'author', content: 'Matis Baguelin'},
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
       // icon for light mode
     ],
