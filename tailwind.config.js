@@ -1,15 +1,17 @@
 const colors = require('tailwindcss/colors');
 module.exports = {
-  purge: [
-    {
-      enabled: true,
-    },
-    './components/**/*.{vue,js}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
-  ],
+  purge: {
+    content: [
+      './components/**/*.{vue,js}',
+      './layouts/**/*.vue',
+      './pages/**/*.vue',
+      './plugins/**/*.{js,ts}',
+      './nuxt.config.{js,ts}',
+    ],
+    options: {
+      safelist: ['/^sm:grid-cols-/'],
+    }
+},
   darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
