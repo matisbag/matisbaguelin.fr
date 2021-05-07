@@ -8,17 +8,17 @@
         </p>
       </div>
       <div class="w-full flex flex-col items-center">
-        <img class="max-w-5xl w-full rounded-lg" :src="require(`~/assets/${project.image}.png`)">
+        <img class="max-w-5xl w-full rounded-lg" :src="require(`~/assets/${project.image}.png`)" :alt="'home page' + project.title">
       </div>
       <div class="py-6 lg:py-12">
-        <div class="flex justify-between space-x-2">
+        <div class="flex flex-wrap justify-between space-x-0 sm:space-x-2 space-y-2">
           <a :href="project.link" target="_blank" class="btn-website">
             <span class="relative z-10">Visiter le site</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
-          <a v-if="project.github" :href="project.github" target="_blank" class="flex items-center px-5 py-1 text-base font-medium rounded-md text-white bg-gray-900 dark:bg-black hover:bg-green-500 duration-500">
+          <a v-if="project.github" :href="project.github" target="_blank" class="flex items-center justify-center rounded-md space-x-2 py-1 px-4 min-w-max w-full sm:w-min text-white bg-gray-900 dark:bg-black hover:bg-green-500 transition duration-500">
             Github &#160;
             <img src="~/assets/icons/d-github.svg" alt="github icon" class="h-5 w-5 text-white hover:text-black">
           </a>
@@ -75,16 +75,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    /* @apply block py-1 px-2 text-green-500 relative transition duration-500 font-semibold underline; */
   .btn-website {
-    width: fit-content;
-    @apply flex items-center space-x-2 py-1 px-4 text-white hover:text-green-500 relative transition duration-500 font-semibold;
+    @apply flex items-center justify-center space-x-2 py-1 px-4 min-w-max text-white hover:text-green-500 relative transition duration-500 font-semibold w-full sm:w-min;
     svg path {
-      @apply text-white transition duration-500
+      @apply text-white transition duration-500;
     }
   }
 
-    /* @apply absolute top-0 left-0 w-0 h-full transition-all duration-500 bg-green-500 rounded-2xl; */
   .btn-website:after {
     @apply absolute top-0 left-0 w-full h-full transition-all duration-500 bg-green-500 rounded-xl;
     content: "";
@@ -92,11 +89,11 @@ export default {
 
   .btn-website:hover {
     svg path{
-      @apply text-green-500
+      @apply text-green-500;
     }
   }
 
   .btn-website:hover:after {
-    @apply w-0
+    @apply w-0;
   }
 </style>
