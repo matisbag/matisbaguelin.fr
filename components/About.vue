@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="max-w-7xl mx-auto py-12 px-4 sm:px-6 sm:py-24 lg:py-36 lg:px-8">
+  <section id="about" class="max-w-7xl mx-auto py-12 sm:px-4 sm:py-24 lg:py-36 lg:px-6">
     <div class="text-center">
       <div class="text-5xl sm:text-7xl md:text-8xl font-semibold">
         <h2 class="font-light tracking-wide">Portfolio</h2>
@@ -14,9 +14,9 @@
       </p>
       <div class="mt-8 flex justify-center">
         <div class="inline-flex rounded-md shadow">
-          <a href="https://github.com/MatisBag/" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-green-500 duration-500">
+          <a href="https://github.com/MatisBag/" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 dark:bg-black hover:bg-green-500 duration-500">
             Github &#160;
-            <img src="~/assets/icons/d-github.svg" alt="github icon" class="h-6 w-6">
+            <img src="~/assets/icons/d-github.svg" alt="github icon" class="h-6 w-6 text-black">
           </a>
         </div>
       </div>
