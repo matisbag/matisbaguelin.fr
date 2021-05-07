@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+  <section class="max-w-7xl mx-auto py-12 sm:px-4 lg:px-6">
     <div id="skills" class="lg:text-center">
       <h2 class="text-base text-green-500 font-semibold tracking-wide uppercase">Mes compétences</h2>
       <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight dark:text-gray-100 sm:text-4xl">

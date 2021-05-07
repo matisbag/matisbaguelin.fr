@@ -1,6 +1,6 @@
 <template>
   <main class="flex-1 px-4 py-10">
-    <article v-if="project.title" class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <article v-if="project.title" class="max-w-7xl mx-auto sm:px-4">
       <div class="lg:text-center">
         <h2 class="text-base text-green-500 font-semibold tracking-wide uppercase">{{ project.title }}</h2>
         <p class="my-2 text-3xl leading-8 font-bold tracking-tight sm:text-4xl">
@@ -10,13 +10,18 @@
       <div class="w-full flex flex-col items-center">
         <img class="max-w-5xl w-full rounded-lg" :src="require(`~/assets/${project.image}.png`)">
       </div>
-      <div class="py-6">
-        <div class="flex justify-center space-x-2">
-          <a :href="project.github" target="_blank" class="bg-black text-white font-bold tracking-wide px-4 py-2 rounded-md hover:rounded-xl transition duration-1000 ease-in-out flex items-center space-x-2">
-            <img src="~/assets/icons/d-github.svg" alt="github icon" class="h-6 w-6">
-            <span>Github</span>
+      <div class="py-6 lg:py-12">
+        <div class="flex justify-between space-x-2">
+          <a :href="project.link" target="_blank" class="btn-website">
+            <span class="relative z-10">Visiter le site</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
           </a>
-          <a :href="project.link" target="_blank" class="bg-gray-800 text-white font-bold tracking-wide px-4 py-2 rounded-md hover:rounded-xl transition duration-1000 ease-in-out">Visiter le site</a>
+          <a v-if="project.github" :href="project.github" target="_blank" class="flex items-center px-5 py-1 text-base font-medium rounded-md text-white bg-gray-900 dark:bg-black hover:bg-green-500 duration-500">
+            Github &#160;
+            <img src="~/assets/icons/d-github.svg" alt="github icon" class="h-5 w-5 text-white hover:text-black">
+          </a>
         </div>
         <div class="py-6">
           <p class="lg:text-lg font-medium text-justify" v-html="project.description"></p>
@@ -47,8 +52,10 @@ export default {
   },
   methods: {
     loadData() {
-      if (this.$store.state.projects.projects.filter(project => project.routeName === this.$route.params.project)[0]){
-        this.project = this.$store.state.projects.projects.filter(project => project.routeName === this.$route.params.project)[0]
+      if (this.$store.state.projects.projects.filter(project => project.routeName === this.$route.params.project)[
+        0]) {
+        this.project = this.$store.state.projects.projects.filter(project => project.routeName === this.$route.params
+          .project)[0]
       } else {
         this.$router.push('/404')
       }
@@ -57,14 +64,39 @@ export default {
   head() {
     return {
       title: 'Matis Baguelin - ' + this.project.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.project.desc
-        }
-      ]
+      meta: [{
+        hid: 'description',
+        name: 'description',
+        content: this.project.desc
+      }]
     }
   }
 }
 </script>
+
+<style scoped lang="scss">
+    /* @apply block py-1 px-2 text-green-500 relative transition duration-500 font-semibold underline; */
+  .btn-website {
+    width: fit-content;
+    @apply flex items-center space-x-2 py-1 px-4 text-white hover:text-green-500 relative transition duration-500 font-semibold;
+    svg path {
+      @apply text-white transition duration-500
+    }
+  }
+
+    /* @apply absolute top-0 left-0 w-0 h-full transition-all duration-500 bg-green-500 rounded-2xl; */
+  .btn-website:after {
+    @apply absolute top-0 left-0 w-full h-full transition-all duration-500 bg-green-500 rounded-xl;
+    content: "";
+  }
+
+  .btn-website:hover {
+    svg path{
+      @apply text-green-500
+    }
+  }
+
+  .btn-website:hover:after {
+    @apply w-0
+  }
+</style>

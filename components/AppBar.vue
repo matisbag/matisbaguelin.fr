@@ -5,7 +5,7 @@
         <div class="relative flex items-center justify-between">
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
-            <button @click="menuOn = !menuOn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+            <button @click="menuOn = !menuOn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-black dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <!-- Icon when menu is closed. -->
               <svg :class="menuOn ? 'hidden' : 'block'" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -41,9 +41,9 @@
       <div :class="menuOn ? 'block' : 'hidden'" class="sm:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <nuxt-link to="/#about" class="text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">About</nuxt-link>
-          <nuxt-link to="/#projects" class="text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Projects</nuxt-link>
-          <nuxt-link to="/#skills" class="text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Skills</nuxt-link>
+          <nuxt-link to="/#about" class="dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">About</nuxt-link>
+          <nuxt-link to="/#projects" class="dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Projects</nuxt-link>
+          <nuxt-link to="/#skills" class="dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Skills</nuxt-link>
           <!-- <nuxt-link to="/#contact" class="text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Contact</nuxt-link> -->
         </div>
       </div>
