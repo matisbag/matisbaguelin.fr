@@ -15,6 +15,14 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Portfolio de Matis Baguelin, Etudiant et développeur full-stack (Vue.js - Laravel) à Paris.' },
+      { hid: 'og:title', name: 'og:title', content: 'Portfolio - Matis Baguelin' },
+      { hid: 'og:description', name: 'og:description', content: 'Portfolio de Matis Baguelin, Etudiant et développeur full-stack (Vue.js - Laravel) à Paris.' },
+      { hid: 'og:image', name: 'og:image', content: '/mb.png' }, // IMG
+      { hid: 'og:image:alt', name: 'og:image:alt', content: 'Portfolio, Matis Baguelin' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Portfolio - Matis Baguelin' },
+      { hid: 'twitter:description', name: 'twitter:description', content: 'Portfolio de Matis Baguelin, Etudiant et développeur full-stack (Vue.js - Laravel) à Paris.' },
+      { hid: 'twitter:image', name: 'twitter:image', content: '/mb.png' }, // IMG
+      { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: 'Portfolio, Matis Baguelin' },
       { name: 'author', content: 'Matis Baguelin'},
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
       // icon for light mode
