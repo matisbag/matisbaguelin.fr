@@ -21,7 +21,7 @@
             <nuxt-link to="/">
               <div class="flex-shrink-0 flex items-center">
                 <img class="h-12 w-auto hidden dark:block" src="~/assets/d-home-icon.png" alt="Matis Baguelin">
-                <img class="h-12 w-auto block dark:hidden" src="~/assets/home-icon.png" alt="Matis Baguelin">
+                <img class="h-12 w-auto dark:hidden" src="~/assets/home-icon.png" alt="Matis Baguelin">
               </div>
             </nuxt-link>
           </div>
