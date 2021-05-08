@@ -9,10 +9,10 @@ module.exports = {
       './nuxt.config.{js,ts}',
     ],
     options: {
-      safelist: ['grid-cols-3'], // /^grid-cols-/
-      blocklist: [/^debug-/],
-      keyframes: true,
-      fontFace: true,
+      safelist: ['sm:grid-cols-3'], // /^grid-cols-/
+      // blocklist: [/^debug-/],
+      // keyframes: true,
+      // fontFace: true,
     }
 },
   darkMode: "media", // or 'media' or 'class'
