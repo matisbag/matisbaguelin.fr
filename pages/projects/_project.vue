@@ -12,13 +12,13 @@
       </div>
       <div class="mx-auto max-w-5xl 2xl:max-w-none py-6 lg:py-12">
         <div class="flex flex-wrap justify-between space-x-0 sm:space-x-2 space-y-2 sm:space-y-0">
-          <a :href="project.link" target="_blank" class="btn btn-website">
+          <a :href="project.link" target="_blank" rel="noopener" class="btn btn-website">
             <span class="relative z-10">Visiter le site</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
-          <a v-if="project.github" :href="project.github" target="_blank" class="btn btn-github">
+          <a v-if="project.github" :href="project.github" target="_blank" rel="noopener" class="btn btn-github">
             Github &#160;
             <img src="~/assets/icons/d-github.svg" alt="github icon" class="h-5 w-5 text-white hover:text-black">
           </a>
