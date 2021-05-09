@@ -10,3 +10,6 @@ sm:grid-cols-9
 sm:grid-cols-10
 sm:grid-cols-11
 sm:grid-cols-12
+hover:to-dark-green
+hover:to-dark-blue
+hover:to-dark-pink
