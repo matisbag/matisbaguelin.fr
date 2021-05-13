@@ -2,7 +2,7 @@
   <section class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div id="contact" class="lg:text-center">
       <h2 class="text-base text-green-500 font-semibold tracking-wide uppercase">Mon contact</h2>
-      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-100 sm:text-4xl">
+      <p class="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight dark:text-gray-100 sm:text-4xl">
         Me contacter
       </p>
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
@@ -47,10 +47,10 @@ export default {
 [type="text"],
 [type="email"],
 textarea {
-  @apply w-full rounded-md border-black border shadow-sm bg-black focus:border-green-300 focus:ring focus:ring-green-200 focus:ring-opacity-50;
+  @apply w-full rounded-md shadow-sm bg-gray-900 dark:bg-gray-800 border-gray-50 dark:border-gray-900 focus:border-green-600 dark:focus:border-green-300 focus:ring focus:ring-green-500 dark:focus:ring-green-200 focus:ring-opacity-50;
 }
 
 .btn {
-  @apply rounded border-2 border-black hover:border-gray-200 px-6 py-2 bg-black text-green-400 shadow-sm font-medium;
+  @apply rounded border-2 border-gray-50 dark:border-gray-900 hover:border-green-500 dark:hover:border-green-300 px-6 py-2 bg-gray-800 text-green-400 shadow-sm font-medium;
 }
 </style>
