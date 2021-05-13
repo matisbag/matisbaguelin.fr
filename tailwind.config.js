@@ -14,7 +14,7 @@ module.exports = {
     // options: {
     //   safelist: [/^sm:grid-cols-/],
     // }
-},
+  },
   darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
