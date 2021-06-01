@@ -66,5 +66,9 @@ export default {
   // https://tailwindcss.nuxtjs.org/setup/
   tailwindcss: {
     jit: true
-  }
+  },
+
+  axios: {
+    baseURL: 'http://127.0.0.1:8000/api', // Used as fallback if no runtime config is provided
+  },
 }

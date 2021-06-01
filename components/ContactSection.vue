@@ -23,7 +23,7 @@
         <textarea type="text" placeholder="Contenu" v-model="content" required class="h-28"/>
       </label>
       <div class="w-full max-w-3xl">
-        <button class="btn justify-self-start" type="submit">Envoyer</button>
+        <button class="btn justify-self-start" type="submit" @click="sendEmail()">Envoyer</button>
       </div>
     </form>
     
@@ -40,6 +40,14 @@ export default {
       content: ''
     }
   },
+  methods: {
+    sendEmail() {
+      this.$axios.$post('/send-email')
+      .then((res) => {
+        console.log(res)
+      })
+    }
+  }
 }
 </script>
 
