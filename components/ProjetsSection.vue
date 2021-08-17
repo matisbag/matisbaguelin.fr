@@ -3,7 +3,7 @@
     <div id="projects" class="lg:text-center">
       <h2 class="text-base text-green-500 font-semibold tracking-wide uppercase">Mes projets</h2>
       <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight dark:text-gray-100 sm:text-4xl">
-        Repository
+        Repositories
       </p>
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
         Projets développés durant mon temps libre
