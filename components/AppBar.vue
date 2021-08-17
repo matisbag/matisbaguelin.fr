@@ -37,13 +37,13 @@
     </div>
 
     <!-- Mobile menu, toggle classes based on menu state. -->
-    <div :class="menuOn ? 'block' : 'hidden'" class="sm:hidden">
-      <div class="px-2 pt-2 pb-3 space-y-1">
+    <div :class="menuOn ? 'block' : 'hidden'" class="sm:hidden absolute w-full px-2">
+      <div class="p-2 space-y-1 shadow-md rounded-lg bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-40 ">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <nuxt-link to="/#about" class="dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">About</nuxt-link>
-        <nuxt-link to="/#projects" class="dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Projects</nuxt-link>
-        <nuxt-link to="/#skills" class="dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Skills</nuxt-link>
-        <!-- <nuxt-link to="/#contact" class="text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 block px-3 py-2 rounded-md text-base font-medium">Contact</nuxt-link> -->
+        <nuxt-link to="/#about" class="mobile-link">About</nuxt-link>
+        <nuxt-link to="/#projects" class="mobile-link">Projects</nuxt-link>
+        <nuxt-link to="/#skills" class="mobile-link">Skills</nuxt-link>
+        <!-- <nuxt-link to="/#contact" class="mobile-link">Contact</nuxt-link> -->
       </div>
     </div>
   </header>
@@ -61,5 +61,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.mobile-link {
+  @apply dark:text-gray-300 hover:bg-gray-200 hover:bg-opacity-70 dark:hover:bg-gray-800 hover:text-green-500 dark:hover:bg-opacity-90 block px-3 py-2 rounded-md text-base font-medium;
+}
 </style>
