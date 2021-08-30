@@ -29,7 +29,8 @@ export default {
       // icon for light mode
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/mb.png' }
+      { rel: 'icon', type: 'image/png', href: '/mb.png' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }
     ]
   },
 
