@@ -37,8 +37,8 @@
     </div>
 
     <!-- Mobile menu, toggle classes based on menu state. -->
-    <div :class="menuOn ? 'block' : 'hidden'" class="sm:hidden absolute w-full px-2">
-      <div class="p-2 space-y-1 shadow-md rounded-lg bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-40 ">
+    <div :class="menuOn ? 'block' : 'hidden'" class="sm:hidden absolute w-full px-2 animate__animated animate__bounceInDown">
+      <div class="p-2 space-y-1 shadow-md rounded-lg bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-80">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <nuxt-link to="/#about" class="mobile-link">About</nuxt-link>
         <nuxt-link to="/#projects" class="mobile-link">Projects</nuxt-link>
