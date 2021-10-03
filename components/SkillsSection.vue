@@ -3,10 +3,10 @@
     <div id="skills" class="lg:text-center">
       <h2 class="text-base text-green-500 font-semibold tracking-wide uppercase">Mes compétences</h2>
       <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight dark:text-gray-100 sm:text-4xl">
-        Techno de prédilections
+        Technos de prédilections
       </p>
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-        Mes années d'expériences m'ont permis de découvrir ces merveilleuses techno 😁
+        Mes années d'expériences m'ont permis de découvrir ces merveilleuses technos 😁
       </p>
     </div>
     <Skills :skills="predilectionsSkills"/>
@@ -15,7 +15,7 @@
       Quelques expériences
     </p>
     <p class="lg:text-center mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-      Technologies avec lesquelles j'ai déjà travaillées
+      Technologies avec lesquelles j'ai déjà travaillés
     </p>
 
     <Skills :skills="othersSkills"/>
