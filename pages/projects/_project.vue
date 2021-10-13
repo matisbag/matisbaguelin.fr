@@ -1,6 +1,6 @@
 <template>
   <main class="flex-1 px-4 py-10">
-    <article v-if="project.title" class="max-w-7xl mx-auto sm:px-4">
+    <article v-if="project" class="max-w-7xl mx-auto sm:px-4">
       <div class="lg:text-center">
         <h2 class="text-base text-green-500 font-semibold tracking-wide uppercase">{{ project.title }}</h2>
         <p class="my-2 text-3xl leading-8 font-bold tracking-tight sm:text-4xl">
@@ -12,7 +12,7 @@
       </div>
       <div class="mx-auto max-w-5xl 2xl:max-w-none py-6 lg:py-12">
         <div class="flex flex-wrap justify-between space-x-0 sm:space-x-2 space-y-2 sm:space-y-0">
-          <a :href="project.link" target="_blank" rel="noopener" class="btn btn-website">
+          <a :href="project.link" target="_blank" rel="noopener" :class="{'invisible' : !project.link}" class="btn btn-website">
             <span class="relative z-10">Visiter le site</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -32,43 +32,27 @@
 </template>
 
 <script>
+const getData = () => import('~/data/data.json').then(m => m.default || m)
+
 export default {
-  data() {
-    return {
-      project: {
-        desc: '',
-        description: '',
-        github: '',
-        image: '',
-        link: '',
-        routeName: '',
-        techno: [],
-        title: ''
-      }
+  async asyncData ({route, error}) {
+    const data = await getData()
+    const project = await data.projects.filter(project => project.routeName === route.params.project)[0]
+    if (!project){
+      error({ statusCode: 404 })
     }
-  },
-  created() {
-    this.loadData()
-  },
-  methods: {
-    loadData() {
-      if (this.$store.state.projects.projects.filter(project => project.routeName === this.$route.params.project)[
-        0]) {
-        this.project = this.$store.state.projects.projects.filter(project => project.routeName === this.$route.params
-          .project)[0]
-      } else {
-        this.$router.push('/404')
-      }
-    }
+    return { project }
   },
   head() {
     return {
-      title: 'Matis Baguelin - ' + this.project.title,
-      meta: [{
-        hid: 'description',
-        name: 'description',
-        content: this.project.desc
-      }]
+      title: `Matis Baguelin - ${this.project.title}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.project.desc
+        }
+      ]
     }
   }
 }
