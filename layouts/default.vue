@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <AppBar />
-    <Nuxt class="flex-1 px-4 py-10"/>
+    <Nuxt keep-alive :keep-alive-props="{ max: 5 }" class="flex-1 px-4 py-10"/>
     <Footer />
   </div>
 </template>

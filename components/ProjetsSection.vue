@@ -22,18 +22,11 @@ export default {
   components: {
     Project
   },
-  data() {
-    return {
-      projects: []
-    }
-  },
-  created() {
-    this.loadData()
-  },
-  methods: {
-    loadData() {
-      this.projects = this.$store.state.projects.projects
-    }
-  },
+  props: {
+    projects: {
+      type: Array,
+      default: () => []
+    },
+  }
 }
 </script>

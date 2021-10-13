@@ -22,15 +22,8 @@ export default {
   props: {
     project: {
       type: Object,
-      default() {
-        return {}
-      }
+      default: () => {}
     },
-  },
-  data() {
-    return {
-      
-    }
   }
 }
 </script>
