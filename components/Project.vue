@@ -28,6 +28,9 @@ export default {
 }
 </script>
 
-<style>
-  /* delete the safelist.txt file when there is a JIT update  */
+<style scoped>
+  /* delete safelist.txt file when there is a JIT update */
+  img {
+    max-width: 1000px;
+  }
 </style>
