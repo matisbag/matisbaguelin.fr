@@ -26,7 +26,6 @@ export default {
       { property: 'twitter:image:alt', content: 'Portfolio, Matis Baguelin' },
       { property: 'author', content: 'Matis Baguelin'},
       { property: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
-      // icon for light mode
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/mb.svg' },
