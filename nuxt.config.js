@@ -1,3 +1,5 @@
+const data = require('./data/data.json')
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
@@ -53,7 +55,9 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://axios.nuxtjs.org/setup
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // https://www.npmjs.com/package/@nuxtjs/sitemap
+    '@nuxtjs/sitemap'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -66,5 +70,11 @@ export default {
   // https://tailwindcss.nuxtjs.org/setup/
   tailwindcss: {
     jit: true
+  },
+
+  sitemap: {
+    routes: async () => {
+      return data.projects.map(v => `/projects/${v.routeName}`)
+    }
   }
 }
