@@ -15,21 +15,21 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Portfolio de Matis Baguelin, Etudiant et développeur full-stack (Vue.js - Laravel) à Paris.' },
-      { hid: 'og:type', name: 'og:type', content: 'website' },
-      { hid: 'og:title', name: 'og:title', content: 'Portfolio - Matis Baguelin' },
-      { hid: 'og:description', name: 'og:description', content: 'Portfolio de Matis Baguelin, Etudiant et développeur full-stack (Vue.js - Laravel) à Paris.' },
-      { hid: 'og:image', name: 'og:image', content: '/mb.png' }, // IMG
-      { hid: 'og:image:alt', name: 'og:image:alt', content: 'Portfolio, Matis Baguelin' },
-      { hid: 'twitter:title', name: 'twitter:title', content: 'Portfolio - Matis Baguelin' },
-      { hid: 'twitter:description', name: 'twitter:description', content: 'Portfolio de Matis Baguelin, Etudiant et développeur full-stack (Vue.js - Laravel) à Paris.' },
-      { hid: 'twitter:image', name: 'twitter:image', content: '/mb.png' }, // IMG
-      { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: 'Portfolio, Matis Baguelin' },
-      { name: 'author', content: 'Matis Baguelin'},
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'Portfolio - Matis Baguelin' },
+      { property: 'og:description', content: 'Portfolio de Matis Baguelin, Etudiant et développeur full-stack (Vue.js - Laravel) à Paris.' },
+      { property: 'og:image', content: '/prev.png' }, // IMG
+      { property: 'og:image:alt', content: 'Portfolio, Matis Baguelin' },
+      { property: 'twitter:title', content: 'Portfolio - Matis Baguelin' },
+      { property: 'twitter:description', content: 'Portfolio de Matis Baguelin, Etudiant et développeur full-stack (Vue.js - Laravel) à Paris.' },
+      { property: 'twitter:image', content: '/prev.png' }, // IMG
+      { property: 'twitter:image:alt', content: 'Portfolio, Matis Baguelin' },
+      { property: 'author', content: 'Matis Baguelin'},
+      { property: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
       // icon for light mode
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/mb.png' },
+      { rel: 'icon', type: 'image/svg+xml', href: '/mb.svg' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }
     ]
   },
