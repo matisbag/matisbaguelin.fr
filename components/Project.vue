@@ -1,7 +1,7 @@
 <template>
   <li class="relative group flex flex-col rounded-lg max-w-5xl transform sm:hover:scale-105 duration-500" >
     <nuxt-link :to="'/projects/' + project.routeName">
-      <img class="rounded-lg" :src="require(`~/assets/${project.image}.png`)" :alt="'home page' + project.title">
+      <img class="rounded-lg w-full" :src="require(`~/assets/${project.image}.png`)" :alt="'home page' + project.title">
       <div>
         <div class="flex space-x-2 my-1">
           <span v-if="project.github" class="flex items-center px-1">
