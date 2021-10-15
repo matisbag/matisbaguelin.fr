@@ -31,7 +31,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/mb.svg' },
-      { rel: 'apple-touch-icon', href: 'prev.png' },
+      { rel: 'apple-touch-icon', href: '/prev.png' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }
     ]
   },
