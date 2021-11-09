@@ -85,6 +85,6 @@ export default {
   // https://github.com/nuxt-community/robots-module
   robots: {
     UserAgent: '*',
-    Disallow: ''
+    Allow: '/'
   }
 }
