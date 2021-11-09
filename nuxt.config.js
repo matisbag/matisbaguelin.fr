@@ -58,7 +58,9 @@ export default {
     // https://axios.nuxtjs.org/setup
     '@nuxtjs/axios',
     // https://www.npmjs.com/package/@nuxtjs/sitemap
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    // https://github.com/nuxt-community/robots-module
+    '@nuxtjs/robots'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -73,9 +75,16 @@ export default {
     jit: true
   },
 
+  // https://sitemap.nuxtjs.org/fr/guide/configuration
   sitemap: {
     routes: async () => {
       return data.projects.map(v => `/projects/${v.routeName}`)
     }
+  },
+
+  // https://github.com/nuxt-community/robots-module
+  robots: {
+    UserAgent: '*',
+    Disallow: ''
   }
 }
