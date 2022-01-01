@@ -4,12 +4,11 @@
   </main>
 </template>
 
-
 <script>
-const getData = () => import('~/data/data.json').then(m => m.default || m)
+const getData = () => import('~/data/data.json').then((m) => m.default || m)
 
 export default {
-  async asyncData () {
+  async asyncData() {
     const data = await getData()
     return { data }
   },
@@ -20,10 +19,10 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Projets développés durant mon temps libre'
-        }
-      ]
+          content: 'Projets développés durant mon temps libre',
+        },
+      ],
     }
-  }
+  },
 }
 </script>

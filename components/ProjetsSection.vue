@@ -1,16 +1,16 @@
 <template>
-  <section class="max-w-7xl mx-auto py-12 sm:px-4 lg:px-6">
+  <section class="mx-auto py-12 max-w-7xl sm:px-4 lg:px-6">
     <div id="projects" class="lg:text-center">
-      <h2 class="text-base text-green-500 font-semibold tracking-wide uppercase">Mes projets</h2>
-      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight dark:text-gray-100 sm:text-4xl">
+      <h2 class="text-green-500 text-base font-semibold tracking-wide uppercase">Mes projets</h2>
+      <p class="mt-2 dark:text-gray-100 text-3xl font-extrabold tracking-tight leading-8 sm:text-4xl">
         Repositories
       </p>
-      <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+      <p class="mt-4 max-w-2xl text-gray-500 text-xl lg:mx-auto">
         Projets développés durant mon temps libre
       </p>
     </div>
 
-    <ul class="flex flex-col items-center space-y-16 mt-2">
+    <ul class="flex flex-col items-center mt-2 space-y-16">
       <project v-for="project in projects" :key="project.routeName" :project="project" />
     </ul>
   </section>
@@ -20,13 +20,13 @@
 import Project from './Project.vue'
 export default {
   components: {
-    Project
+    Project,
   },
   props: {
     projects: {
       type: Array,
-      default: () => []
+      default: () => [],
     },
-  }
+  },
 }
 </script>

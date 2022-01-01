@@ -1,5 +1,5 @@
 {
-  "projects" : [
+  "projects": [
     {
       "routeName": "url-shortener",
       "title": "Url Shortener",

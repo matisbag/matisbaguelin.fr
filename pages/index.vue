@@ -8,16 +8,15 @@
 
     <!-- <ContactSection /> -->
   </main>
-    
 </template>
 
 <script>
-const getData = () => import('~/data/data.json').then(m => m.default || m)
+const getData = () => import('~/data/data.json').then((m) => m.default || m)
 
 export default {
-  async asyncData () {
+  async asyncData() {
     const data = await getData()
     return { data }
-  }
+  },
 }
 </script>

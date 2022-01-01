@@ -1,17 +1,28 @@
 <template>
-  <li class="relative group flex flex-col rounded-lg max-w-5xl transform sm:hover:scale-105 duration-500" >
+  <li
+    class="group sm:hover:scale-105 relative flex flex-col max-w-5xl rounded-lg transform duration-500"
+  >
     <nuxt-link :to="'/projects/' + project.routeName">
-      <img class="rounded-lg w-full" :src="require(`~/assets/${project.image}.png`)" :alt="'home page' + project.title">
+      <img
+        class="w-full rounded-lg"
+        :src="require(`~/assets/${project.image}.png`)"
+        :alt="'home page' + project.title"
+      />
       <div>
-        <div class="flex space-x-2 my-1">
+        <div class="flex my-1 space-x-2">
           <span v-if="project.github" class="flex items-center px-1">
-            <img src="~/assets/icons/github.svg" alt="icon github" class="h-6 dark:hidden">
-            <img src="~/assets/icons/d-github.svg" alt="icon github" class="h-6 hidden dark:block">
+            <img src="~/assets/icons/github.svg" alt="icon github" class="dark:hidden h-6" />
+            <img src="~/assets/icons/d-github.svg" alt="icon github" class="dark:block hidden h-6" />
           </span>
-          <span v-for="techno in project.techno" :key="techno" class="py-1 px-4 bg-gray-800 text-white font-medium rounded-xl">{{techno}}</span>
+          <span
+            v-for="techno in project.techno"
+            :key="techno"
+            class="px-4 py-1 text-white font-medium bg-gray-800 rounded-xl"
+            v-html="techno"
+          />
         </div>
-        <h3 class="mb-2 font-bold text-xl lg:text-2xl">{{project.title}}</h3>
-        <p class="text-sm lg:text-lg">{{project.desc}}</p>
+        <h3 class="mb-2 text-xl font-bold lg:text-2xl">{{ project.title }}</h3>
+        <p class="text-sm lg:text-lg">{{ project.desc }}</p>
       </div>
     </nuxt-link>
   </li>
@@ -22,15 +33,15 @@ export default {
   props: {
     project: {
       type: Object,
-      default: () => {}
+      default: () => {},
     },
-  }
+  },
 }
 </script>
 
 <style scoped>
-  /* delete safelist.txt file when there is a JIT update */
-  img {
-    max-width: 1000px;
-  }
+/* delete safelist.txt file when there is a JIT update */
+img {
+  max-width: 1000px;
+}
 </style>

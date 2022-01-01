@@ -2,24 +2,21 @@
 
 🔰 Clique [ici](https://matisbaguelin.fr/) pour visualiser mon Portfolio. 🔰
 
+## Techno(s)
 
-## Techno(s) 
-
-* Vue.js (Nuxt.js)
-* Tailwind CSS
-
+- Vue.js (Nuxt.js)
+- Tailwind CSS
 
 ## Aperçu
 
 ![about](/static/preview1.PNG)
 ![skills](/static/preview2.PNG)
 
-
 ## Auteur(s) & date
 
-* **Matis BAGUELIN**
+- **Matis BAGUELIN**
 
-*Avril 2021*
+_Avril 2021_
 
 ## Setup
 
