@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors');
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
@@ -15,19 +15,17 @@ module.exports = {
     //   safelist: [/^sm:grid-cols-/],
     // }
   },
-  darkMode: "media", // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
         gray: colors.trueGray,
         green: colors.emerald,
         'dark-green': '#011c15',
-        'dark-pink' : '#260713',
-        'dark-blue' : '#0f0d26'
+        'dark-pink': '#260713',
+        'dark-blue': '#0f0d26',
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-  ],
+  plugins: [require('@tailwindcss/forms')],
 }
