@@ -64,16 +64,7 @@
       </div>
       <div class="mt-6">
         <p
-          class="
-            dark:hover:text-white
-            text-center
-            hover:text-black
-            dark:text-gray-200
-            text-gray-800 text-base
-            font-semibold
-            transition
-            duration-300
-          "
+          class="dark:hover:text-white text-center hover:text-black dark:text-gray-200 text-gray-800 text-base font-semibold transition duration-300"
         >
           © Matis 2021, Inc.
         </p>
@@ -86,6 +77,6 @@
 export default {
   data() {
     return {}
-  },
+  }
 }
 </script>

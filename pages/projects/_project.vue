@@ -85,11 +85,11 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.project.desc,
-        },
-      ],
+          content: this.project.desc
+        }
+      ]
     }
-  },
+  }
 }
 </script>
 

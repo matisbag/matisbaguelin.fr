@@ -33,9 +33,9 @@ export default {
     return {
       name: '',
       email: '',
-      content: '',
+      content: ''
     }
-  },
+  }
 }
 </script>
 
