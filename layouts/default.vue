@@ -5,10 +5,3 @@
     <Footer />
   </div>
 </template>
-
-<style>
-html {
-  scroll-behavior: smooth;
-  @apply text-gray-800 dark:text-white bg-gray-50 dark:bg-gray-900;
-}
-</style>
