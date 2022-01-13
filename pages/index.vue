@@ -17,6 +17,6 @@ export default {
   async asyncData() {
     const data = await getData()
     return { data }
-  },
+  }
 }
 </script>

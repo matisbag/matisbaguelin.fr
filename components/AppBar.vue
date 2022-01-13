@@ -6,18 +6,7 @@
           <!-- Mobile menu button-->
           <button
             @click="menuOn = !menuOn"
-            class="
-              dark:hover:text-white dark:hover:bg-gray-700
-              inline-flex
-              items-center
-              justify-center
-              p-2
-              hover:text-black
-              text-gray-400
-              hover:bg-gray-200
-              rounded-md
-              focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
-            "
+            class="dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center justify-center p-2 hover:text-black text-gray-400 hover:bg-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
@@ -65,7 +54,11 @@
                 src="~/assets/d-home-icon.png"
                 alt="Matis Baguelin"
               />
-              <img class="dark:hidden w-auto h-12" src="~/assets/home-icon.png" alt="Matis Baguelin" />
+              <img
+                class="dark:hidden w-auto h-12"
+                src="~/assets/home-icon.png"
+                alt="Matis Baguelin"
+              />
             </div>
           </nuxt-link>
         </div>
@@ -74,41 +67,17 @@
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <nuxt-link
               to="/#about"
-              class="
-                dark:hover:bg-gray-800
-                px-4
-                py-2
-                text-green-500
-                hover:bg-gray-100
-                rounded-lg
-                duration-100
-              "
+              class="dark:hover:bg-gray-800 px-4 py-2 text-green-500 hover:bg-gray-100 rounded-lg duration-100"
               >About</nuxt-link
             >
             <nuxt-link
               to="/#projects"
-              class="
-                dark:hover:bg-gray-800
-                px-4
-                py-2
-                text-green-500
-                hover:bg-gray-100
-                rounded-lg
-                duration-100
-              "
+              class="dark:hover:bg-gray-800 px-4 py-2 text-green-500 hover:bg-gray-100 rounded-lg duration-100"
               >Projects</nuxt-link
             >
             <nuxt-link
               to="/#skills"
-              class="
-                dark:hover:bg-gray-800
-                px-4
-                py-2
-                text-green-500
-                hover:bg-gray-100
-                rounded-lg
-                duration-100
-              "
+              class="dark:hover:bg-gray-800 px-4 py-2 text-green-500 hover:bg-gray-100 rounded-lg duration-100"
               >Skills</nuxt-link
             >
             <!-- <nuxt-link to="/#contact" class="px-4 py-2 text-green-500 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-100">Contact</nuxt-link> -->
@@ -123,15 +92,7 @@
       class="animate__animated animate__bounceInDown absolute px-2 w-full sm:hidden"
     >
       <div
-        class="
-          p-2
-          dark:bg-black
-          bg-gray-100 bg-opacity-90
-          dark:bg-opacity-95
-          rounded-lg
-          shadow-md
-          space-y-1
-        "
+        class="p-2 dark:bg-black bg-gray-100 bg-opacity-90 dark:bg-opacity-95 rounded-lg shadow-md space-y-1"
       >
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <nuxt-link to="/#about" class="mobile-link">About</nuxt-link>
@@ -148,9 +109,9 @@ export default {
   data() {
     return {
       menuOn: false,
-      isOn: false,
+      isOn: false
     }
-  },
+  }
 }
 </script>
 

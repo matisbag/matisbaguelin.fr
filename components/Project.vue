@@ -12,7 +12,11 @@
         <div class="flex my-1 space-x-2">
           <span v-if="project.github" class="flex items-center px-1">
             <img src="~/assets/icons/github.svg" alt="icon github" class="dark:hidden h-6" />
-            <img src="~/assets/icons/d-github.svg" alt="icon github" class="dark:block hidden h-6" />
+            <img
+              src="~/assets/icons/d-github.svg"
+              alt="icon github"
+              class="dark:block hidden h-6"
+            />
           </span>
           <span
             v-for="techno in project.techno"
@@ -33,9 +37,9 @@ export default {
   props: {
     project: {
       type: Object,
-      default: () => {},
-    },
-  },
+      default: () => {}
+    }
+  }
 }
 </script>
 

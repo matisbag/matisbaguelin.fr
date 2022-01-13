@@ -15,7 +15,7 @@
           index === skills.skills.length - 1
             ? 'rounded-b-lg sm:rounded-b-none sm:rounded-r-lg'
             : 'border-b sm:border-r',
-          'hover:to-' + skills.color,
+          'hover:to-' + skills.color
         ]"
       >
         <div class="px-1 py-4 text-center sm:py-6">
@@ -42,11 +42,11 @@ export default {
       type: Object,
       default() {
         return {}
-      },
-    },
+      }
+    }
   },
   data() {
     return {}
-  },
+  }
 }
 </script>

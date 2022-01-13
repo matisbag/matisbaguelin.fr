@@ -1,8 +1,12 @@
 <template>
   <section class="mx-auto py-12 max-w-7xl sm:px-4 lg:px-6">
     <div id="skills" class="lg:text-center">
-      <h2 class="text-green-500 text-base font-semibold tracking-wide uppercase">Mes compétences</h2>
-      <p class="mt-2 dark:text-gray-100 text-3xl font-extrabold tracking-tight leading-8 sm:text-4xl">
+      <h2 class="text-green-500 text-base font-semibold tracking-wide uppercase">
+        Mes compétences
+      </h2>
+      <p
+        class="mt-2 dark:text-gray-100 text-3xl font-extrabold tracking-tight leading-8 sm:text-4xl"
+      >
         Technos de prédilections
       </p>
       <p class="mt-4 max-w-2xl text-gray-500 text-xl lg:mx-auto">
@@ -12,16 +16,7 @@
     <Skills :skills="predilectionsSkills" />
 
     <p
-      class="
-        mt-8
-        dark:text-gray-100
-        text-3xl
-        font-extrabold
-        tracking-tight
-        leading-8
-        sm:text-4xl
-        lg:text-center
-      "
+      class="mt-8 dark:text-gray-100 text-3xl font-extrabold tracking-tight leading-8 sm:text-4xl lg:text-center"
     >
       Quelques expériences
     </p>
@@ -32,16 +27,7 @@
     <Skills :skills="othersSkills" />
 
     <p
-      class="
-        mt-8
-        dark:text-gray-100
-        text-3xl
-        font-extrabold
-        tracking-tight
-        leading-8
-        sm:text-4xl
-        lg:text-center
-      "
+      class="mt-8 dark:text-gray-100 text-3xl font-extrabold tracking-tight leading-8 sm:text-4xl lg:text-center"
     >
       Outils
     </p>
@@ -59,7 +45,7 @@
 import Skills from './Skills.vue'
 export default {
   components: {
-    Skills,
+    Skills
   },
   data() {
     return {
@@ -67,66 +53,66 @@ export default {
         skills: [
           {
             name: 'Vue.js',
-            icon: 'icons/vuejs',
+            icon: 'icons/vuejs'
           },
           {
             name: 'Laravel',
-            icon: 'icons/laravel',
+            icon: 'icons/laravel'
           },
           {
             name: 'Node.js',
-            icon: 'icons/nodejs',
-          },
+            icon: 'icons/nodejs'
+          }
         ],
-        color: 'dark-green',
+        color: 'dark-green'
       },
       othersSkills: {
         skills: [
           {
             name: 'Angular',
-            icon: 'icons/angular',
+            icon: 'icons/angular'
           },
           {
             name: 'Symfony',
-            icon: 'icons/symfony',
+            icon: 'icons/symfony'
           },
           {
             name: 'Kotlin',
-            icon: 'icons/kotlin',
-          },
+            icon: 'icons/kotlin'
+          }
         ],
-        color: 'dark-pink',
+        color: 'dark-pink'
       },
       toolsSkills: {
         skills: [
           {
             name: 'NuxtJS',
-            icon: 'icons/nuxtjs',
+            icon: 'icons/nuxtjs'
           },
           {
             name: 'Tailwind CSS',
-            icon: 'icons/tailwindcss',
+            icon: 'icons/tailwindcss'
           },
           {
             name: 'Vuetify',
-            icon: 'icons/vuetify',
+            icon: 'icons/vuetify'
           },
           {
             name: 'Git',
-            icon: 'icons/git',
+            icon: 'icons/git'
           },
           {
             name: 'GitKraken',
-            icon: 'icons/gitkraken',
+            icon: 'icons/gitkraken'
           },
           {
             name: 'Sass',
-            icon: 'icons/sass',
-          },
+            icon: 'icons/sass'
+          }
         ],
-        color: 'dark-blue',
-      },
+        color: 'dark-blue'
+      }
     }
-  },
+  }
 }
 </script>

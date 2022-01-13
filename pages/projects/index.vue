@@ -19,10 +19,10 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Projets développés durant mon temps libre',
-        },
-      ],
+          content: 'Projets développés durant mon temps libre'
+        }
+      ]
     }
-  },
+  }
 }
 </script>
