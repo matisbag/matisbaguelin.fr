@@ -80,12 +80,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {}
-      }
-    }
+    // postcss: {
+    //   plugins: {
+    //     tailwindcss: {},
+    //     autoprefixer: {}
+    //   }
+    // }
   },
 
   // https://sitemap.nuxtjs.org/fr/guide/configuration

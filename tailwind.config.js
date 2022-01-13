@@ -21,7 +21,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.neutral,
+        gray: colors.zinc,
         green: colors.emerald,
         "dark-green": "#011c15",
         "dark-pink": "#260713",
