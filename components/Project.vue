@@ -26,7 +26,6 @@
           />
         </div>
         <h3 class="mb-2 text-xl font-bold lg:text-2xl">{{ project.title }}</h3>
-        <p class="text-sm lg:text-lg">{{ project.desc }}</p>
       </div>
     </nuxt-link>
   </li>
