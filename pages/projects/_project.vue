@@ -1,13 +1,10 @@
 <template>
   <main class="flex-1 px-4 py-10">
     <article v-if="project" class="mx-auto max-w-7xl sm:px-4">
-      <div class="lg:text-center">
+      <div class="lg:text-center mb-4">
         <h2 class="text-green-500 text-base font-semibold tracking-wide uppercase">
           {{ project.title }}
         </h2>
-        <p class="my-2 text-3xl font-bold tracking-tight leading-8 sm:text-4xl">
-          {{ project.desc }}
-        </p>
       </div>
       <div class="flex flex-col items-center w-full">
         <img
@@ -85,7 +82,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.project.desc
+          content: this.project.title
         }
       ]
     }
