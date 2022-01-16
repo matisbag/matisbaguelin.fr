@@ -1,7 +1,12 @@
 <template>
   <section class="mx-auto py-12 max-w-7xl sm:px-4 lg:px-6">
     <div id="projects" class="lg:text-center">
-      <h2 class="text-green-500 text-base font-semibold tracking-wide uppercase">Mes projets</h2>
+      <h1 v-if="h1" class="text-green-500 text-base font-semibold tracking-wide uppercase">
+        {{ h1 }}
+      </h1>
+      <h2 v-else class="text-green-500 text-base font-semibold tracking-wide uppercase">
+        Mes projets
+      </h2>
       <p
         class="mt-2 dark:text-gray-100 text-3xl font-extrabold tracking-tight leading-8 sm:text-4xl"
       >
@@ -28,6 +33,10 @@ export default {
     projects: {
       type: Array,
       default: () => []
+    },
+    h1: {
+      type: String,
+      default: ''
     }
   }
 }
