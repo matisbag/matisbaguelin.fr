@@ -1,6 +1,6 @@
 <template>
   <main class="flex-1 px-4 py-10">
-    <ProjetsSection :projects="data.projects" />
+    <ProjetsSection :projects="data.projects" h1="Mes projets" />
   </main>
 </template>
 
@@ -19,7 +19,8 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Projets développés durant mon temps libre'
+          content:
+            "Matis Baguelin portfolio : durant mes années d\études j'ai pu développer des projets Front et Back."
         }
       ]
     }
