@@ -12,20 +12,20 @@
     {
       "routeName": "todo-list",
       "title": "Todo List",
-      "description": "Réalisation d'une Todo list avec Nuxt.",
+      "description": "Réalisation d'une Todo list. Fonctionnalités sur une tâche : cocher, éplinger, éditer, ajouter une description.",
       "image": "projects/preview_todo-list",
       "link": "",
       "github": "https://github.com/matisbag/todo-list",
       "techno": ["Vue.js (Nuxt.js)", "Tailwind CSS", "json-server"]
     },
     {
-      "routeName": "the-blog",
-      "title": "The Blog",
-      "description": "L\"objectif était de créer un blog avec un espace membres avec du PHP, avec la possibilité d'écrire des commentaires.",
-      "image": "projects/preview_the-blog",
-      "link": "http://mbaguelin.eemi.tech/BDD/blog/",
-      "github": "https://github.com/matisbag/tp-blog",
-      "techno": ["HTML", "CSS", "JS", "PHP"]
+      "routeName": "tic-tac-toe",
+      "title": "Morpion",
+      "description": "Réalisation d'un morpion en react et vanilla TS. Morpion avec 2 joueurs et sauvegarde du score en cours.",
+      "image": "projects/preview_tic-tac-toe",
+      "link": "",
+      "github": "https://github.com/matisbag/tic-tac-toe",
+      "techno": ["React.js", "TypeScript"]
     }
   ]
 }
