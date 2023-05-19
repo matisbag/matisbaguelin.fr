@@ -43,7 +43,7 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/svg+xml', href: '/mb.svg' },
+      { rel: 'icon', type: 'image/x-icon', href: '/mb.ico' },
       { rel: 'apple-touch-icon', href: '/prev.png' },
       {
         rel: 'stylesheet',
