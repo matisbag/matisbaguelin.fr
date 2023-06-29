@@ -52,16 +52,16 @@ export default {
       predilectionsSkills: {
         skills: [
           {
+            name: 'React',
+            icon: 'icons/react'
+          },
+          {
             name: 'Vue.js',
             icon: 'icons/vuejs'
           },
           {
             name: 'Laravel',
             icon: 'icons/laravel'
-          },
-          {
-            name: 'Node.js',
-            icon: 'icons/nodejs'
           }
         ],
         color: 'dark-green'
@@ -69,22 +69,26 @@ export default {
       othersSkills: {
         skills: [
           {
-            name: 'Angular',
-            icon: 'icons/angular'
-          },
-          {
             name: 'Symfony',
             icon: 'icons/symfony'
           },
           {
-            name: 'Kotlin',
-            icon: 'icons/kotlin'
+            name: 'Node.js',
+            icon: 'icons/nodejs'
+          },
+          {
+            name: 'Python',
+            icon: 'icons/python'
           }
         ],
         color: 'dark-pink'
       },
       toolsSkills: {
         skills: [
+          {
+            name: 'Next.js',
+            icon: 'icons/nextjs'
+          },
           {
             name: 'NuxtJS',
             icon: 'icons/nuxtjs'
@@ -104,10 +108,6 @@ export default {
           {
             name: 'GitKraken',
             icon: 'icons/gitkraken'
-          },
-          {
-            name: 'Sass',
-            icon: 'icons/sass'
           }
         ],
         color: 'dark-blue'
