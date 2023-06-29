@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "routeName": "photo-gallery",
+      "title": "Photo Gallery",
+      "description": "Photo Gallery est une application Next.js qui est une version simplifiée de Google Photos.",
+      "image": "projects/preview_photo-gallery",
+      "link": "",
+      "github": "https://github.com/matisbag/photo-gallery",
+      "techno": ["React.js (Next.js)", "TypeScript", "Material-UI", "Supabase"]
+    },
+    {
       "routeName": "url-shortener",
       "title": "Url Shortener",
       "description": "Réaliser un raccourcisseur d'url sans utiliser de package.",

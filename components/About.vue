@@ -14,7 +14,7 @@
       >
         Jeune développeur depuis fin 2019, je suis passionné par le développement web.
         <br class="hidden xl:inline-block" />
-        Mes frameworks favoris sont : Vue.js et Laravel !
+        Mes frameworks favoris sont : React, Vue.js et Laravel !
       </p>
       <div class="flex justify-center mt-8">
         <div class="inline-flex rounded-md shadow">
