@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from "tailwindcss"
+
+export default {
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -11,6 +12,9 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      screens: {
+        xl: "1280px",
+      },
     },
     extend: {
       maxWidth: {
@@ -19,4 +23,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+} satisfies Config

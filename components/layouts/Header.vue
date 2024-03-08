@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white border-b-[1px] border-solid border-gray-200">
     <div
-      class="max-w-container mx-auto flex justify-between items-center py-4 px-6 lg:py-6 lg:px-8"
+      class="max-w-container mx-auto flex justify-between items-center padding-container"
     >
       <div>
         <NuxtLink href="/">
