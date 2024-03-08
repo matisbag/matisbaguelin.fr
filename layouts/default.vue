@@ -1,6 +1,6 @@
 <template>
   <div>
-    header
+    <LayoutsHeader />
     <slot />
     footer
   </div>

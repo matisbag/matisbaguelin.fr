@@ -1,3 +1,5 @@
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <main class="container">
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  </main>
 </template>
