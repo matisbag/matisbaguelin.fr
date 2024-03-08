@@ -4,6 +4,10 @@
 
 @layer base {
   main {
-    @apply grow;
+    @apply grow container padding-container;
+  }
+
+  .padding-container {
+    @apply py-4 px-6 lg:py-6 lg:px-8;
   }
 }
