@@ -12,4 +12,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  content: {
+    highlight: {
+      theme: "github-dark",
+    },
+  },
 })
