@@ -21,11 +21,7 @@
         <nav class="hidden sm:block">
           <ul class="flex space-x-4">
             <li v-for="link in links">
-              <NuxtLink
-                :to="link.href"
-                class="hover:underline"
-                active-class="underline"
-              >
+              <NuxtLink :to="link.href" class="hover:underline">
                 {{ link.name }}
               </NuxtLink>
             </li>
@@ -46,7 +42,6 @@
             @click="mobileMenuOpen = false"
             :to="link.href"
             class="hover:underline"
-            active-class="underline"
           >
             {{ link.name }}
           </NuxtLink>
