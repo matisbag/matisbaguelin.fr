@@ -1,11 +1,12 @@
 <template>
   <main>
     <ContentList path="/" v-slot="{ list }">
-      <div v-for="article in list" :key="article._path">
-        <a :href="`/projects${article._path}`">
-          <h2>{{ article.title }}</h2>
-        </a>
-      </div>
+      <ProjectCard
+        v-for="project in list"
+        :item="project"
+        class="py-6"
+        :class="{ 'border-t-[1px] border-gray-200': project !== list[0] }"
+      />
     </ContentList>
   </main>
 </template>
