@@ -6,8 +6,12 @@
         :alt="item.image.alt"
         class="w-full rounded-lg"
       />
-      <h2 class="pt-2 text-2xl font-bold">{{ item.title }}</h2>
     </a>
+    <h2 class="pt-2 text-2xl font-bold">
+      <a :href="`/projects${item._path}`" class="hover:underline">
+        {{ item.title }}
+      </a>
+    </h2>
   </div>
 </template>
 
