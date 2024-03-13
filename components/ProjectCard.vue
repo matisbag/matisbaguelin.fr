@@ -4,14 +4,15 @@
       <img
         :src="item.image.src"
         :alt="item.image.alt"
-        class="w-full rounded-lg"
+        class="w-full mb-2 rounded-lg"
       />
     </NuxtLink>
-    <h2 class="pt-2 text-2xl font-bold">
+    <h2 class="mb-2 text-2xl font-bold">
       <a :href="`/projects${item._path}`" class="hover:underline">
         {{ item.title }}
       </a>
     </h2>
+    <p class="text-gray-500 tracking-wide">{{ item.description }}</p>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ interface Image {
 interface Item {
   _path: string
   title: string
+  description: string
   image: Image
 }
 
