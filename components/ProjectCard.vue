@@ -1,5 +1,5 @@
 <template>
-  <div v-bind="$attrs">
+  <section v-bind="$attrs">
     <NuxtLink :href="`/projects${item._path}`">
       <img
         :src="item.image.src"
@@ -13,23 +13,13 @@
       </a>
     </h2>
     <p class="text-gray-500 tracking-wide">{{ item.description }}</p>
-  </div>
+  </section>
 </template>
 
 <script lang="ts" setup>
-interface Image {
-  src: string
-  alt: string
-}
-
-interface Item {
-  _path: string
-  title: string
-  description: string
-  image: Image
-}
+import type { ParsedContent } from "@nuxt/content/dist/runtime/types"
 
 defineProps<{
-  item: Item
+  item: ParsedContent
 }>()
 </script>
