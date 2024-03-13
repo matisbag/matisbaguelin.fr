@@ -1,12 +1,12 @@
 <template>
   <div v-bind="$attrs">
-    <a :href="`/projects${item._path}`">
+    <NuxtLink :href="`/projects${item._path}`">
       <img
         :src="item.image.src"
         :alt="item.image.alt"
         class="w-full rounded-lg"
       />
-    </a>
+    </NuxtLink>
     <h2 class="pt-2 text-2xl font-bold">
       <a :href="`/projects${item._path}`" class="hover:underline">
         {{ item.title }}
