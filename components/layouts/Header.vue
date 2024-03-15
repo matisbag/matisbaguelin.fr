@@ -4,7 +4,7 @@
       class="max-w-container mx-auto flex justify-between items-center padding-container"
     >
       <div>
-        <NuxtLink href="/">
+        <NuxtLink to="/">
           <img src="/icon.svg" alt="Home icon" />
         </NuxtLink>
       </div>
@@ -28,9 +28,9 @@
           </ul>
         </nav>
         <div>
-          <a href="https://github.com/matisbag" target="_blank">
+          <NuxtLink to="https://github.com/matisbag" target="_blank">
             <img src="~/assets/images/github.svg" alt="github icon" />
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>
