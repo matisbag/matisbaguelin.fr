@@ -24,9 +24,9 @@
       :class="main ? 'basis-1/2 md:min-h-[300px]' : 'basis-3/5'"
     >
       <h2 class="text-2xl font-bold" :class="{ 'md:text-4xl': main }">
-        <a :to="`/projects${item._path}`" class="hover:underline">
+        <NuxtLink :to="`/projects${item._path}`" class="hover:underline">
           {{ item.title }}
-        </a>
+        </NuxtLink>
       </h2>
       <p class="text-gray-500 tracking-wide">{{ item.description }}</p>
       <UtilsExternalLink :to="item.repository" class="hidden md:block">
