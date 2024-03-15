@@ -7,4 +7,8 @@ image:
 repository: "https://github.com/matisbag/shortener"
 ---
 
-# URL Shortener
+> {{ $doc.description }}
+
+:img{:src="image.src" :alt="image.alt"}
+
+::github-link{:to="repository"}

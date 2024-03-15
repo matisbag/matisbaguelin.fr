@@ -14,12 +14,20 @@ export default {
     container: {
       center: true,
       screens: {
-        xl: "1280px",
+        xl: "1180px",
       },
     },
     extend: {
       maxWidth: {
         container: "1280px",
+      },
+      typography: {
+        quoteless: {
+          css: {
+            "blockquote p:first-of-type::before": { content: "none" },
+            "blockquote p:first-of-type::after": { content: "none" },
+          },
+        },
       },
     },
   },

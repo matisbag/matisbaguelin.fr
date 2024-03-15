@@ -6,7 +6,7 @@
       Mes projets
     </h1>
     <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 md:gap-y-4">
-      <ProjectCard
+      <ProjectsCard
         v-for="(project, index) in projects"
         :item="project"
         class="border-t-[1px] border-gray-200"
@@ -18,8 +18,6 @@
 </template>
 
 <script lang="ts" setup>
-import ProjectCard from "~/components/ProjectCard.vue"
-
 const { data: projects } = await useAsyncData("projects", () =>
   queryContent().find(),
 )
