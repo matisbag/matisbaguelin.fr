@@ -7,4 +7,8 @@ image:
 repository: "https://github.com/matisbag/tic-tac-toe"
 ---
 
-# Morpion
+> {{ $doc.description }}
+
+:img{:src="image.src" :alt="image.alt"}
+
+::github-link{:to="repository"}
