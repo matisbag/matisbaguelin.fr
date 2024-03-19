@@ -2,6 +2,6 @@
   <div class="flex flex-col min-h-screen">
     <LayoutsHeader />
     <slot />
-    footer
+    <LayoutsFooter />
   </div>
 </template>

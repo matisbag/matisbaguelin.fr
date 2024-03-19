@@ -53,11 +53,7 @@
 
 <script lang="ts" setup>
 import { ChevronDownIcon } from "@heroicons/vue/20/solid"
-
-const links = [
-  { name: "A propos", href: "/about" },
-  { name: "Projets", href: "/projects" },
-]
+import links from "~/utils/links"
 
 const mobileMenuOpen = ref(false)
 </script>
