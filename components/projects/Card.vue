@@ -31,11 +31,7 @@
       <p class="text-gray-500 tracking-wide">{{ item.description }}</p>
       <UtilsExternalLink :to="item.repository" class="hidden md:block">
         <template #image>
-          <img
-            src="~/assets/images/github.svg"
-            alt="github icon"
-            class="h-4 w-auto"
-          />
+          <RiGithubFill size="20px" />
         </template>
         Github
       </UtilsExternalLink>
@@ -45,6 +41,7 @@
 
 <script lang="ts" setup>
 import type { ParsedContent } from "@nuxt/content/dist/runtime/types"
+import { RiGithubFill } from "@remixicon/vue"
 
 defineProps<{
   item: ParsedContent

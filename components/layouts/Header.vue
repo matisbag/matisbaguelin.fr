@@ -29,7 +29,7 @@
         </nav>
         <div>
           <NuxtLink to="https://github.com/matisbag" target="_blank">
-            <img src="~/assets/images/github.svg" alt="github icon" />
+            <RiGithubFill size="36px" />
           </NuxtLink>
         </div>
       </div>
@@ -53,6 +53,7 @@
 
 <script lang="ts" setup>
 import { ChevronDownIcon } from "@heroicons/vue/20/solid"
+import { RiGithubFill } from "@remixicon/vue"
 import links from "~/utils/links"
 
 const mobileMenuOpen = ref(false)
