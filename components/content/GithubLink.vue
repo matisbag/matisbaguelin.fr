@@ -1,17 +1,15 @@
 <template>
   <UtilsExternalLink :to="to" class="prose-img:my-0">
     <template #image>
-      <img
-        src="~/assets/images/github.svg"
-        alt="github icon"
-        class="h-4 w-auto"
-      />
+      <RiGithubFill size="20px" />
     </template>
     Ouvrir sur Github
   </UtilsExternalLink>
 </template>
 
 <script lang="ts" setup>
+import { RiGithubFill } from "@remixicon/vue"
+
 defineProps<{
   to: string
 }>()
