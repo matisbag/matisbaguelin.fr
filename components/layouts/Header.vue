@@ -20,9 +20,9 @@
         </button>
         <nav class="hidden sm:block">
           <ul class="flex space-x-4">
-            <li v-for="link in links">
-              <NuxtLink :to="link.href" class="hover:underline">
-                {{ link.name }}
+            <li v-for="menuLink in menuLinks">
+              <NuxtLink :to="menuLink.path" class="hover:underline">
+                {{ menuLink.title }}
               </NuxtLink>
             </li>
           </ul>
@@ -37,13 +37,13 @@
 
     <div v-if="mobileMenuOpen" class="absolute mt-[1px] w-full sm:hidden">
       <ul class="p-6 bg-white shadow-md space-y-6">
-        <li v-for="link in links">
+        <li v-for="menuLink in menuLinks">
           <NuxtLink
             @click="mobileMenuOpen = false"
-            :to="link.href"
+            :to="menuLink.path"
             class="hover:underline"
           >
-            {{ link.name }}
+            {{ menuLink.title }}
           </NuxtLink>
         </li>
       </ul>
@@ -54,7 +54,7 @@
 <script lang="ts" setup>
 import { ChevronDownIcon } from "@heroicons/vue/20/solid"
 import { RiGithubFill } from "@remixicon/vue"
-import links from "~/utils/links"
+import { menuLinks } from "~/utils/links"
 
 const mobileMenuOpen = ref(false)
 </script>

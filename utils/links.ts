@@ -1,11 +1,33 @@
+import { RiGithubFill, RiLinkedinFill } from "@remixicon/vue"
+import type { Component } from "vue"
+
 interface Link {
-  name: string
-  href: string
+  title: string
+  path: string
 }
 
-const links: Link[] = [
-  { name: "A propos", href: "/about" },
-  { name: "Projets", href: "/projects" },
+interface SocialLink {
+  title: string
+  href: string
+  icon: Component
+}
+
+const menuLinks: Link[] = [
+  { title: "A propos", path: "/about" },
+  { title: "Projets", path: "/projects" },
 ]
 
-export default links
+const socialLinks: SocialLink[] = [
+  {
+    title: "linkedin",
+    href: "https://www.linkedin.com/in/matis-baguelin/",
+    icon: RiLinkedinFill,
+  },
+  {
+    title: "github",
+    href: "https://github.com/matisbag",
+    icon: RiGithubFill,
+  },
+]
+
+export { menuLinks, socialLinks }

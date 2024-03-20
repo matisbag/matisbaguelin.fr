@@ -5,13 +5,13 @@
     >
       <div class="flex space-x-4">
         <NuxtLink
-          v-for="link in socialLinks"
-          :to="link.href"
+          v-for="socialLink in socialLinks"
+          :to="socialLink.href"
           target="_blank"
-          :title="link.title"
+          :title="socialLink.title"
         >
           <component
-            :is="link.icon"
+            :is="socialLink.icon"
             size="28px"
             class-name="fill-gray-600 transition-colors hover:fill-black"
           />
@@ -20,12 +20,12 @@
       <div class="flex space-x-4 text-gray-600">
         <span class="text-black">© 2024</span>
         <NuxtLink
-          v-for="link in links"
-          :to="link.href"
+          v-for="menuLink in menuLinks"
+          :to="menuLink.path"
           class="transition-colors hover:text-black"
           active-class="text-black"
         >
-          {{ link.name }}
+          {{ menuLink.title }}
         </NuxtLink>
       </div>
     </div>
@@ -33,19 +33,5 @@
 </template>
 
 <script lang="ts" setup>
-import links from "~/utils/links"
-import { RiGithubFill, RiLinkedinFill } from "@remixicon/vue"
-
-const socialLinks = [
-  {
-    title: "linkedin",
-    href: "https://www.linkedin.com/in/matis-baguelin/",
-    icon: RiLinkedinFill,
-  },
-  {
-    title: "github",
-    href: "https://github.com/matisbag",
-    icon: RiGithubFill,
-  },
-]
+import { menuLinks, socialLinks } from "~/utils/links"
 </script>
