@@ -16,5 +16,12 @@ useHead({
         "Développeur passionné par les nouvelles technologies et la recherche constante de perfectionnement. Découvrez mes réalisations et compétences en développement web.",
     },
   ],
+  link: [
+    {
+      rel: "icon",
+      type: "image/svg+xml",
+      href: "/icon.svg",
+    },
+  ],
 })
 </script>
