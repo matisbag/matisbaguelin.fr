@@ -1,11 +1,8 @@
 const data = require('./data/data.json')
 
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
-
   // https://fr.nuxtjs.org/docs/2.x/features/deployment-targets/
-  target: 'server',
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -90,6 +87,7 @@ export default {
 
   // https://sitemap.nuxtjs.org/fr/guide/configuration
   sitemap: {
+    hostname: process.env.SITEMAP_HOSTNAME,
     routes: async () => {
       return data.projects.map((v) => `/projects/${v.routeName}`)
     }
