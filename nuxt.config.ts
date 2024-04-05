@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ["@nuxt/content", "@nuxt/image"],
+  modules: ["@nuxt/content", "@nuxt/image", "@nuxtjs/sitemap"],
 
   css: ["~/assets/css/main.css"],
 
@@ -16,6 +16,16 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       theme: "github-dark",
+    },
+  },
+
+  sitemap: {
+    sources: ["/api/sitemap"],
+  },
+
+  nitro: {
+    prerender: {
+      routes: ["/sitemap.xml"],
     },
   },
 })
