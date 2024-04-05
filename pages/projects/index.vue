@@ -18,6 +18,16 @@
 </template>
 
 <script lang="ts" setup>
+useHead({
+  title: "Projets",
+  meta: [
+    {
+      name: "description",
+      content: "Découvrez mes projets de développement web.",
+    },
+  ],
+})
+
 const { data: projects } = await useAsyncData("projects", () =>
   queryContent().find(),
 )
