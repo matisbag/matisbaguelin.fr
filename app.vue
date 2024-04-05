@@ -5,7 +5,13 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute()
+let darkMode = ref(false)
+
+onMounted(() =>
+  nextTick(() => {
+    darkMode.value = window.matchMedia("(prefers-color-scheme: dark)").matches
+  }),
+)
 
 useHead({
   title: "Matis Baguelin - Portfolio",
@@ -20,7 +26,7 @@ useHead({
     {
       rel: "icon",
       type: "image/svg+xml",
-      href: "/icon.svg",
+      href: darkMode ? "favicon-dark.svg" : "/favicon.svg",
     },
   ],
 })
