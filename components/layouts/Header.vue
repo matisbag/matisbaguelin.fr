@@ -5,7 +5,7 @@
     >
       <div>
         <NuxtLink to="/">
-          <img src="/icon.svg" alt="Home icon" />
+          <img src="/favicon.svg" alt="Home icon" />
         </NuxtLink>
       </div>
 
