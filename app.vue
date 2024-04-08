@@ -26,7 +26,7 @@ useHead({
     {
       rel: "icon",
       type: "image/svg+xml",
-      href: darkMode ? "favicon-dark.svg" : "/favicon.svg",
+      href: darkMode.value ? "/favicon-dark.svg" : "/favicon.svg",
     },
   ],
 })
