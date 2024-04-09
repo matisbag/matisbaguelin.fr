@@ -1,7 +1,9 @@
 <template>
   <main>
     <ContentDoc :path="slug" v-slot="{ doc }">
-      <article class="prose prose-img:rounded-lg prose-quoteless max-w-none">
+      <article
+        class="prose prose-img:rounded-lg prose-img:drop-shadow-sm prose-quoteless max-w-none"
+      >
         <h1>{{ doc.title }}</h1>
         <ContentRenderer :value="doc" />
       </article>
