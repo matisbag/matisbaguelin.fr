@@ -2,7 +2,7 @@
 title: "URL Shortener"
 description: "Ce projet est un raccourcisseur d'URL très simple, développé à l'aide de Laravel et MySQL."
 image:
-  src: "https://github.blog/wp-content/uploads/2023/10/hero-light.jpg?resize=1600%2C850"
+  src: "/img/url-shortener.png"
   alt: "lorem"
 repository: "https://github.com/matisbag/shortener"
 ---
@@ -12,3 +12,16 @@ repository: "https://github.com/matisbag/shortener"
 :img{:src="image.src" :alt="image.alt"}
 
 ::github-link{:to="repository"}
+::
+
+### Histoire du projet
+
+Ce projet de raccourcisseur d'URL est né de ma propre expérience en entreprise. Confronté à la nécessité de simplifier la gestion des liens en ligne, j'ai décidé de développer cet outil à l'aide de Laravel et MySQL. L'objectif était de créer une solution simple et pratique pour raccourcir les URL, rendant ainsi les liens plus faciles à partager (et surtout plus court !).
+
+### Technologies utilisées
+
+Ce projet a été développé avec [Laravel](https://laravel.com/) et [MySQL](https://www.mysql.com/) pour la gestion des données.
+
+### Fonctionnalités
+
+- Convertit des URL longues en liens courts (comme avec [bitly](https://bitly.com/))
