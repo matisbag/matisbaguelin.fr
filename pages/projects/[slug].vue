@@ -1,6 +1,6 @@
 <template>
   <main>
-    <ContentDoc :path="slug" v-slot="{ doc }">
+    <ContentDoc v-slot="{ doc }">
       <article
         class="prose prose-img:rounded-lg prose-img:drop-shadow-sm prose-quoteless max-w-none"
       >
@@ -10,8 +10,3 @@
     </ContentDoc>
   </main>
 </template>
-
-<script lang="ts" setup>
-const route = useRoute()
-const { slug } = route.params
-</script>

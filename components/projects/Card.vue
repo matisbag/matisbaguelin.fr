@@ -9,7 +9,7 @@
     "
   >
     <NuxtLink
-      :to="`/projects${item._path}`"
+      :to="item._path"
       class="block"
       :class="main ? 'basis-1/2' : 'basis-2/5'"
     >
@@ -24,7 +24,7 @@
       :class="main ? 'basis-1/2 md:min-h-[300px]' : 'basis-3/5'"
     >
       <h2 class="text-2xl font-bold" :class="{ 'md:text-4xl': main }">
-        <NuxtLink :to="`/projects${item._path}`" class="hover:underline">
+        <NuxtLink :to="item._path" class="hover:underline">
           {{ item.title }}
         </NuxtLink>
       </h2>
