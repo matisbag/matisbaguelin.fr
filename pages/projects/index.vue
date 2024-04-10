@@ -25,6 +25,6 @@ useHead({
 })
 
 const { data: projects } = await useAsyncData("projects", () =>
-  queryContent().find(),
+  queryContent("projects").find(),
 )
 </script>
