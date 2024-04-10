@@ -1,5 +1,5 @@
-import { RiGithubFill, RiLinkedinFill } from "@remixicon/vue"
 import type { Component } from "vue"
+import { GitHubIcon, LinkedInIcon } from "vue3-simple-icons"
 
 interface Link {
   title: string
@@ -21,12 +21,12 @@ const socialLinks: SocialLink[] = [
   {
     title: "linkedin",
     href: "https://www.linkedin.com/in/matis-baguelin/",
-    icon: RiLinkedinFill,
+    icon: LinkedInIcon,
   },
   {
     title: "github",
     href: "https://github.com/matisbag",
-    icon: RiGithubFill,
+    icon: GitHubIcon,
   },
 ]
 
