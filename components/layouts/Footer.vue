@@ -12,8 +12,8 @@
         >
           <component
             :is="socialLink.icon"
-            size="28px"
-            class-name="fill-gray-600 transition-colors hover:fill-black"
+            size="26px"
+            class="fill-gray-600 transition-colors hover:fill-black"
           />
         </NuxtLink>
       </div>
