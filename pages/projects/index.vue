@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1 class="py-4 text-xl font-bold tracking-wide">Mes projets</h1>
+    <h1 class="mb-4 text-4xl font-extrabold tracking-wide">Mes projets</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 md:gap-y-4">
       <ProjectsCard
         v-for="(project, index) in projects"
