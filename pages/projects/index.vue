@@ -1,29 +1,30 @@
 <template>
-  <main class="flex-1 px-4 py-10">
-    <ProjetsSection :projects="data.projects" h1="Mes projets" />
+  <main>
+    <h1 class="mb-4 text-4xl font-extrabold tracking-wide">Mes projets</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 md:gap-y-4">
+      <ProjectsCard
+        v-for="(project, index) in projects"
+        :item="project"
+        class="border-t-[1px] border-gray-200"
+        :class="{ 'md:col-span-2': index === 0 }"
+        :main="index === 0"
+      />
+    </div>
   </main>
 </template>
 
-<script>
-const getData = () => import('~/data/data.json').then((m) => m.default || m)
+<script lang="ts" setup>
+useHead({
+  title: "Projets",
+  meta: [
+    {
+      name: "description",
+      content: "Découvrez mes projets de développement web.",
+    },
+  ],
+})
 
-export default {
-  async asyncData() {
-    const data = await getData()
-    return { data }
-  },
-  head() {
-    return {
-      title: 'Matis Baguelin - Projets',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            "Matis Baguelin portfolio : durant mes années d\études j'ai pu développer des projets Front et Back."
-        }
-      ]
-    }
-  }
-}
+const { data: projects } = await useAsyncData("projects", () =>
+  queryContent("projects").find(),
+)
 </script>
