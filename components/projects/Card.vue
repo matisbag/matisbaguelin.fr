@@ -16,6 +16,8 @@
       <NuxtImg
         :src="item.image.src"
         :alt="item.image.alt"
+        format="webp"
+        sizes="100vw md:720px"
         class="w-full h-full object-cover rounded-lg"
       />
     </NuxtLink>
