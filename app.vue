@@ -24,5 +24,8 @@ useHead({
       href: darkMode.value ? "/favicon-dark.svg" : "/favicon.svg",
     },
   ],
+  htmlAttrs: {
+    lang: "fr",
+  },
 })
 </script>
