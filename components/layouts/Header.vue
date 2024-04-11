@@ -5,7 +5,7 @@
     >
       <div>
         <NuxtLink to="/">
-          <img src="/favicon.svg" alt="Home icon" />
+          <NuxtImg src="/favicon.svg" alt="Home icon" class="w-11 h-auto" />
         </NuxtLink>
       </div>
 
@@ -58,9 +58,3 @@ import { menuLinks } from "~/utils/links"
 
 const mobileMenuOpen = ref(false)
 </script>
-
-<style scoped>
-img {
-  @apply h-8 w-auto;
-}
-</style>
