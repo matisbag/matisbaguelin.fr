@@ -31,4 +31,15 @@
 
 <script lang="ts" setup>
 import { socialLinks } from "~/utils/links"
+
+useHead({
+  title: "Portfolio",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Développeur passionné par les nouvelles technologies et la recherche constante de perfectionnement. Découvrez mes réalisations et compétences en développement web.",
+    },
+  ],
+})
 </script>
