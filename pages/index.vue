@@ -35,16 +35,32 @@
 </template>
 
 <script lang="ts" setup>
+const config = useRuntimeConfig()
 import { socialLinks } from "~/utils/links"
 
+const title = ref("Portfolio")
+const description = ref(
+  "Développeur passionné par les nouvelles technologies et la recherche constante de perfectionnement. Découvrez mes réalisations et compétences en développement web.",
+)
+
 useHead({
-  title: "Portfolio",
+  title,
   meta: [
     {
       name: "description",
-      content:
-        "Développeur passionné par les nouvelles technologies et la recherche constante de perfectionnement. Découvrez mes réalisations et compétences en développement web.",
+      content: description.value,
     },
   ],
+})
+
+useSeoMeta({
+  ogTitle: "Portfolio - Matis Baguelin",
+  ogDescription: description.value,
+  ogImage: config.public.siteUrl + "/img/preview.jpg",
+  ogUrl: config.public.siteUrl,
+  twitterTitle: "Portfolio - Matis Baguelin",
+  twitterDescription: description.value,
+  twitterImage: config.public.siteUrl + "/img/preview.jpg",
+  twitterCard: "summary",
 })
 </script>
