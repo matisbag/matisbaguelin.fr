@@ -5,11 +5,11 @@
         <h1 class="text-4xl font-extrabold mb-2">
           Hello, je suis Matis Baguelin.
         </h1>
-        <h2 class="text-lg text-slate-900 font-semibold uppercase">
+        <h2 class="text-lg text-gray-900 font-semibold uppercase">
           Développeur fullstack.
         </h2>
       </div>
-      <p class="text-lg text-slate-600 my-9 md:max-w-[720px]">
+      <p class="text-lg text-gray-600 my-9 md:max-w-[720px]">
         Je suis passionné par les nouvelles technologies, les bonnes pratiques,
         la rigueur et le développement continu de mes compétences.
       </p>

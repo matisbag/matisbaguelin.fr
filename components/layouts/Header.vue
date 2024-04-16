@@ -5,7 +5,16 @@
     >
       <div>
         <NuxtLink to="/">
-          <NuxtImg src="/favicon.svg" alt="Home icon" class="w-11 h-auto" />
+          <NuxtImg
+            src="/favicon.svg"
+            alt="Home icon"
+            class="dark:hidden w-11 h-auto"
+          />
+          <NuxtImg
+            src="/favicon-dark.svg"
+            alt="Home icon"
+            class="dark:block hidden w-11 h-auto"
+          />
         </NuxtLink>
       </div>
 
@@ -29,14 +38,14 @@
         </nav>
         <div>
           <NuxtLink to="https://github.com/matisbag" target="_blank">
-            <GitHubIcon size="32px" />
+            <GitHubIcon class="fill-black" size="32px" />
           </NuxtLink>
         </div>
       </div>
     </div>
 
     <div v-if="mobileMenuOpen" class="absolute mt-[1px] w-full sm:hidden">
-      <ul class="p-6 bg-white shadow-md space-y-6">
+      <ul class="p-6 bg-white shadow-md border-b border-gray-200 space-y-6">
         <li v-for="menuLink in menuLinks">
           <NuxtLink
             @click="mobileMenuOpen = false"

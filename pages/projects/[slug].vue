@@ -1,7 +1,7 @@
 <template>
   <main>
     <div
-      class="prose prose-img:rounded-lg prose-img:drop-shadow-sm prose-quoteless max-w-none flex flex-col"
+      class="prose prose-zinc prose-img:rounded-lg prose-img:drop-shadow-sm prose-quoteless max-w-none flex flex-col"
     >
       <ContentDoc>
         <template #not-found>

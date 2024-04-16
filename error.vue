@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="default">
-    <main class="prose max-w-none flex flex-col">
+    <main class="prose prose-zinc max-w-none flex flex-col">
       <section
         class="grow flex flex-col md:flex-row-reverse justify-center md:justify-evenly items-center"
       >

@@ -30,10 +30,12 @@
           {{ item.title }}
         </NuxtLink>
       </h2>
-      <p class="text-gray-500 tracking-wide">{{ item.description }}</p>
+      <p class="text-gray-500 tracking-wide">
+        {{ item.description }}
+      </p>
       <UtilsExternalLink :to="item.repository" class="hidden md:block">
         <template #image>
-          <GitHubIcon size="18px" />
+          <GitHubIcon size="18px" class="fill-black" />
         </template>
         Github
       </UtilsExternalLink>

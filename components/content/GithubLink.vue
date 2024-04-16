@@ -1,7 +1,7 @@
 <template>
   <UtilsExternalLink :to="to" class="prose-img:my-0">
     <template #image>
-      <GitHubIcon size="18px" />
+      <GitHubIcon size="18px" class="fill-black" />
     </template>
     Ouvrir sur Github
   </UtilsExternalLink>

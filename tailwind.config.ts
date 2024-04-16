@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import colors from "tailwindcss/colors"
 import typography from "@tailwindcss/typography"
 
 export default {
@@ -11,6 +12,16 @@ export default {
     "./error.vue",
   ],
   theme: {
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      black: colors.black,
+      white: colors.white,
+      gray: colors.zinc,
+      emerald: colors.emerald,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
+    },
     container: {
       center: true,
       screens: {
@@ -28,6 +39,12 @@ export default {
             "blockquote p:first-of-type::after": { content: "none" },
           },
         },
+      },
+      dropShadow: {
+        white: [
+          "0 1px 2px rgb(255 255 255 / 0.1)",
+          "0 1px 1px rgb(255 255 255 / 0.06)",
+        ],
       },
     },
   },

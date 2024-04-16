@@ -1,7 +1,7 @@
 <template>
   <main>
     <ContentDoc v-slot="{ doc }">
-      <section class="prose max-w-none">
+      <section class="prose prose-zinc max-w-none">
         <h1>{{ doc.title }}</h1>
         <ContentRenderer :value="doc" />
       </section>

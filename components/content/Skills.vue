@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-3 auto-rows-fr gap-2 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8 text-gray-800 fill-gray-800"
+    class="grid grid-cols-3 auto-rows-fr gap-2 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-8"
   >
     <div
       v-for="skill in skills"
