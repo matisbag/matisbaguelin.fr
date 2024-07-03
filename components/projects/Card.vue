@@ -18,7 +18,7 @@
         :alt="item.image.alt"
         format="webp"
         sizes="100vw md:720px"
-        class="w-full h-full object-cover rounded-lg"
+        class="w-full h-full object-cover rounded-lg shadow-sm hover:shadow transition-shadow"
       />
     </NuxtLink>
     <div
