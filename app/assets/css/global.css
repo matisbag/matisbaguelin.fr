@@ -1,1 +1,9 @@
 @layer reset, base, tokens, recipes, utilities;
+
+@layer base {
+  html,
+  body {
+    background-color: var(--colors-bg);
+    color: var(--colors-text);
+  }
+}

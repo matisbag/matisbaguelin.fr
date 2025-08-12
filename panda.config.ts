@@ -10,9 +10,22 @@ export default defineConfig({
   // Files to exclude
   exclude: [],
 
+  conditions: {
+    light: '[data-color-mode=light] &',
+    dark: '[data-color-mode=dark] &',
+  },
+
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      semanticTokens: {
+        colors: {
+          primary: { value: { base: '{colors.blue.500}', _dark: '{colors.blue.400}' } },
+          bg: { value: { base: '{colors.gray.100}', _dark: '{colors.gray.900}' } },
+          text: { value: { base: '{colors.gray.800}', _dark: '{colors.gray.200}' } },
+        },
+      },
+    },
   },
 
   // The output directory for your css system
