@@ -1,4 +1,5 @@
 <template>
+  <AnimatedBackground />
   <Header />
   <slot />
   <Footer />
