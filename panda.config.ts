@@ -18,11 +18,32 @@ export default defineConfig({
   // Useful for theme customization
   theme: {
     extend: {
+      tokens: {
+        fonts: {
+          heading: { value: ['Space Grotesk', 'sans-serif'] },
+        },
+      },
       semanticTokens: {
         colors: {
           primary: { value: { base: '{colors.blue.500}', _dark: '{colors.blue.400}' } },
-          bg: { value: { base: '{colors.gray.100}', _dark: '{colors.gray.900}' } },
-          text: { value: { base: '{colors.gray.800}', _dark: '{colors.gray.200}' } },
+          bg: {
+            DEFAULT: { value: { base: '{colors.white}', _dark: '{colors.gray.900}' } },
+          },
+          text: {
+            DEFAULT: { value: { base: '{colors.gray.700}', _dark: '{colors.gray.200}' } },
+            toned: { value: { base: '{colors.gray.600}', _dark: '{colors.gray.300}' } },
+            muted: { value: { base: '{colors.gray.500}', _dark: '{colors.gray.400}' } },
+          },
+        },
+      },
+    },
+  },
+
+  patterns: {
+    extend: {
+      container: {
+        defaultValues: {
+          width: '100%',
         },
       },
     },

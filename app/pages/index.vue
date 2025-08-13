@@ -1,13 +1,72 @@
 <script lang="ts" setup>
 import { css } from 'styled-system/css'
-import { container } from 'styled-system/patterns'
+import { container, stack } from 'styled-system/patterns'
+
+import { SplitText } from 'gsap/SplitText'
+
+const { $gsap } = useNuxtApp()
+
+onMounted(() => {
+  const titleSplit = new SplitText('.title', { type: 'chars' })
+
+  $gsap.fromTo(titleSplit.chars,
+    { opacity: 0, y: 50 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      ease: 'back.out(1.7)',
+      stagger: 0.03, // Délai entre chaque caractère
+    },
+  )
+
+  $gsap.fromTo('.subtitle',
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.7, delay: 0.5, ease: 'power2.out' },
+  )
+
+  $gsap.fromTo('.link',
+    { opacity: 0, y: 20 },
+    { opacity: 1, y: 0, duration: 0.5, delay: 0.8, ease: 'power2.out' },
+  )
+})
 </script>
 
 <template>
-  <main :class="container()">
-    <h1>Hello world!</h1>
-    <div :class="css({ fontSize: '5xl', fontWeight: 'bold', color: 'primary' })">
-      Hello 🐼!
-    </div>
+  <main :class="[container(), stack({ justify: 'center', align: 'center', gap: '2.5', textAlign: 'center' })]">
+    <h1
+      class="title"
+      :class="css({ fontSize: '8xl', fontWeight: 'bold', fontFamily: 'heading', lineHeight: 'initial' })"
+    >
+      Matis Baguelin
+    </h1>
+    <h2
+      class="subtitle"
+      :class="css({ color: 'text.toned', fontSize: 'lg', fontWeight: 'medium' })"
+    >
+      <span :class="css({ color: 'primary' })">Full Stack</span> Developer crafting beautiful, modern front-end experiences ✨
+    </h2>
+    <NuxtLink
+      to="/projects"
+      class="link"
+      :class="css({
+        color: 'primary',
+        bg: '{colors.primary/10}',
+        px: '6',
+        py: '3',
+        fontSize: 'sm',
+        fontWeight: 'medium',
+        textDecoration: 'none',
+        rounded: 'md',
+        border: '1px solid {colors.primary/20}',
+        transition: 'all 0.2s ease',
+        _hover: {
+          bg: '{colors.primary/15}',
+          borderColor: '{colors.primary/40}',
+        },
+      })"
+    >
+      View my projects
+    </NuxtLink>
   </main>
 </template>
