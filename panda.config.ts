@@ -32,11 +32,17 @@ export default defineConfig({
             muted: { value: { base: '{colors.gray.50}', _dark: '{colors.gray.900}' } },
             elevated: { value: { base: '{colors.gray.100}', _dark: '{colors.gray.800}' } },
             accented: { value: { base: '{colors.gray.200}', _dark: '{colors.gray.700}' } },
+            inverted: { value: { base: '{colors.gray.900}', _dark: '{colors.white}' } },
           },
           text: {
             DEFAULT: { value: { base: '{colors.gray.700}', _dark: '{colors.gray.200}' } },
             toned: { value: { base: '{colors.gray.600}', _dark: '{colors.gray.300}' } },
             muted: { value: { base: '{colors.gray.500}', _dark: '{colors.gray.400}' } },
+          },
+          border: {
+            DEFAULT: { value: { base: '{colors.gray.200}', _dark: '{colors.gray.800}' } },
+            accented: { value: { base: '{colors.gray.300}', _dark: '{colors.gray.700}' } },
+            inverted: { value: { base: '{colors.gray.800}', _dark: '{colors.white}' } },
           },
         },
       },

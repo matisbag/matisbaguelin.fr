@@ -36,7 +36,7 @@ onMounted(() => {
   <main :class="[container(), stack({ justify: 'center', align: 'center', gap: '2.5', textAlign: 'center' })]">
     <h1
       class="title"
-      :class="css({ fontSize: '8xl', fontWeight: 'bold', fontFamily: 'heading', lineHeight: 'initial' })"
+      :class="css({ fontSize: { base: '4xl', sm: '6xl', md: '8xl' }, fontWeight: 'bold', fontFamily: 'heading', lineHeight: 'initial' })"
     >
       Matis Baguelin
     </h1>
@@ -46,27 +46,11 @@ onMounted(() => {
     >
       <span :class="css({ color: 'primary' })">Full Stack</span> Developer crafting beautiful, modern front-end experiences ✨
     </h2>
-    <NuxtLink
+    <Button
       to="/projects"
       class="link"
-      :class="css({
-        color: 'primary',
-        bg: '{colors.primary/10}',
-        px: '6',
-        py: '3',
-        fontSize: 'sm',
-        fontWeight: 'medium',
-        textDecoration: 'none',
-        rounded: 'md',
-        border: '1px solid {colors.primary/20}',
-        transition: 'all 0.2s ease',
-        _hover: {
-          bg: '{colors.primary/15}',
-          borderColor: '{colors.primary/40}',
-        },
-      })"
     >
       View my projects
-    </NuxtLink>
+    </Button>
   </main>
 </template>
