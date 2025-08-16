@@ -1,5 +1,5 @@
 <template>
-  <AnimatedBackground />
+  <StarBackground />
   <Header />
   <slot />
   <Footer />

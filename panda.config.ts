@@ -25,8 +25,8 @@ export default defineConfig({
       },
       semanticTokens: {
         colors: {
-          primary: { value: { base: '{colors.blue.500}', _dark: '{colors.blue.400}' } },
-          secondary: { value: { base: '{colors.violet.500}', _dark: '{colors.violet.400}' } },
+          primary: { value: { base: '{colors.sky.500}', _dark: '{colors.sky.400}' } },
+          secondary: { value: { base: '{colors.fuchsia.500}', _dark: '{colors.fuchsia.400}' } },
           bg: {
             DEFAULT: { value: { base: '{colors.white}', _dark: '{colors.gray.950}' } },
             muted: { value: { base: '{colors.gray.50}', _dark: '{colors.gray.900}' } },
