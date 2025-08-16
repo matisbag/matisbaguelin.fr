@@ -5,11 +5,9 @@
 </template>
 
 <script setup>
-const { colorMode } = useColorMode()
-
 useHead({
   htmlAttrs: {
-    'data-color-mode': colorMode,
+    'data-color-mode': 'dark',
   },
 })
 </script>

@@ -7,6 +7,8 @@ import { SplitText } from 'gsap/SplitText'
 const { $gsap } = useNuxtApp()
 
 onMounted(() => {
+  $gsap.set('.title', { opacity: 1 })
+
   const titleSplit = new SplitText('.title', { type: 'chars' })
 
   $gsap.fromTo(titleSplit.chars,
@@ -36,19 +38,20 @@ onMounted(() => {
   <main :class="[container(), stack({ justify: 'center', align: 'center', gap: '2.5', textAlign: 'center' })]">
     <h1
       class="title"
-      :class="css({ fontSize: { base: '4xl', sm: '6xl', md: '8xl' }, fontWeight: 'bold', fontFamily: 'heading', lineHeight: 'initial' })"
+      :class="css({ fontSize: { base: '4xl', sm: '6xl', md: '8xl' }, fontWeight: 'bold', fontFamily: 'heading', lineHeight: 'initial', opacity: 0 })"
     >
       Matis Baguelin
     </h1>
     <h2
       class="subtitle"
-      :class="css({ color: 'text.toned', fontSize: 'lg', fontWeight: 'medium' })"
+      :class="css({ color: 'text.toned', fontSize: 'lg', fontWeight: 'medium', opacity: '0' })"
     >
       <span :class="css({ color: 'primary' })">Full Stack</span> Developer crafting beautiful, modern front-end experiences ✨
     </h2>
     <Button
       to="/projects"
       class="link"
+      :class="css({ opacity: '0' })"
     >
       View my projects
     </Button>

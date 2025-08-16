@@ -1,19 +1,24 @@
 <script lang="ts" setup>
-import { css } from 'styled-system/css'
+import { flex } from 'styled-system/patterns'
 
-const { toggleColorMode } = useColorMode()
+const links = [
+  { name: 'Home', to: '/' },
+  { name: 'About', to: '/about' },
+  { name: 'Projects', to: '/projects' },
+]
 </script>
 
 <template>
-  <header>
-    <NuxtLink to="/">
-      Header
-    </NuxtLink>
-    <button
-      :class="css({ px: '2', py: '1', fontSize: 'md', backgroundColor: 'primary', rounded: 'sm', color: 'white' })"
-      @click="toggleColorMode"
-    >
-      switch
-    </button>
+  <header :class="flex({ justify: 'center', padding: '2' })">
+    <nav :class="flex({ gap: '2', align: 'center' })">
+      <Button
+        v-for="link in links"
+        :key="link.name"
+        :to="link.to"
+        size="sm"
+      >
+        {{ link.name }}
+      </Button>
+    </nav>
   </header>
 </template>

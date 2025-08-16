@@ -4,12 +4,23 @@
       ref="starsCanvas"
       :class="canvasStyle"
     />
-    <PlanetHorizon />
+    <Transition
+      @enter="onEnter"
+      @leave="onLeave"
+    >
+      <PlanetHorizon v-if="showPlanetHorizon" />
+    </Transition>
   </div>
 </template>
 
 <script setup lang="ts">
 import { css } from 'styled-system/css'
+
+const { showPlanetHorizon } = defineProps<{
+  showPlanetHorizon?: boolean
+}>()
+
+const { $gsap } = useNuxtApp()
 
 const starsCanvas = useTemplateRef<HTMLCanvasElement>('starsCanvas')
 
@@ -162,6 +173,33 @@ onMounted(() => {
     animationId = requestAnimationFrame(animate)
   }
 })
+
+const onEnter = (el: Element, done: () => void) => {
+  $gsap.set(el, {
+    y: 100,
+    opacity: 0,
+    scale: 0.9,
+  })
+  $gsap.to(el, {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    duration: 1.2,
+    ease: 'power2.out',
+    onComplete: done,
+  })
+}
+
+const onLeave = (el: Element, done: () => void) => {
+  $gsap.to(el, {
+    y: 100,
+    opacity: 0,
+    scale: 0.9,
+    duration: 0.8,
+    ease: 'power2.in',
+    onComplete: done,
+  })
+}
 
 onUnmounted(() => {
   if (animationId) {
