@@ -36,20 +36,20 @@ const maskWrapperStyle = css({
 
 const glowStyle = css({
   position: 'absolute',
-  bottom: '180px',
+  bottom: '190px',
   left: '40%',
   transform: 'translateX(-50%)',
   height: '111px',
   width: '787px',
   overflow: 'hidden',
-  background: 'radial-gradient(50% 50% at 50% 50%, {colors.secondary} 0%, {colors.secondary/10} 100%)',
+  background: 'radial-gradient(50% 50% at 50% 50%, {colors.secondary} 0%, {colors.secondary/15} 100%)',
   filter: 'blur(57px)',
 })
 
 const planetSurfaceStyle = css({
   position: 'absolute',
   right: '-432px',
-  bottom: '-703px',
+  bottom: '-673px',
   left: '-454px',
   height: '955px',
   borderRadius: '100%',
@@ -59,7 +59,7 @@ const planetSurfaceStyle = css({
 const mainSurfaceStyle = css({
   position: 'absolute',
   right: '-510px',
-  bottom: '-709px',
+  bottom: '-679px',
   left: '-532px',
   height: '956px',
   aspectRatio: '2.346820809248555/1',
