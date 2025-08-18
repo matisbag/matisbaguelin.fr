@@ -3,9 +3,14 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint'],
+  modules: ['@nuxt/eslint', '@nuxt/content'],
   devtools: { enabled: true },
   css: ['~/assets/css/global.css'],
+
+  content: {
+    experimental: { nativeSqlite: true },
+  },
+
   alias: {
     'styled-system': resolve('./styled-system'),
   },
