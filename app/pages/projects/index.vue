@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { container } from 'styled-system/patterns'
+
 const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection('projects')
     .select('title', 'description', 'path', 'id')
@@ -7,7 +9,7 @@ const { data: projects } = await useAsyncData('projects', () => {
 </script>
 
 <template>
-  <main>
+  <main :class="container({ paddingTop: '55px' })">
     <h1>Projects</h1>
 
     <p
