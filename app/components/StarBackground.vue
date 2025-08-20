@@ -4,10 +4,7 @@
       ref="starsCanvas"
       :class="canvasStyle"
     />
-    <Transition
-      @enter="onEnter"
-      @leave="onLeave"
-    >
+    <Transition @enter="onEnter">
       <PlanetHorizon v-if="showPlanetHorizon" />
     </Transition>
   </div>
@@ -25,10 +22,9 @@ const { $gsap } = useNuxtApp()
 const starsCanvas = useTemplateRef<HTMLCanvasElement>('starsCanvas')
 
 const backgroundStyle = css({
-  position: 'fixed',
+  position: 'absolute',
   inset: '0',
   pointerEvents: 'none',
-  background: 'radial-gradient(ellipse at bottom, {colors.primary/05} 0%, transparent 60%), {colors.bg/02}',
   overflow: 'hidden',
 })
 
@@ -186,17 +182,6 @@ const onEnter = (el: Element, done: () => void) => {
     scale: 1,
     duration: 1.2,
     ease: 'power2.out',
-    onComplete: done,
-  })
-}
-
-const onLeave = (el: Element, done: () => void) => {
-  $gsap.to(el, {
-    y: 100,
-    opacity: 0,
-    scale: 0.9,
-    duration: 0.8,
-    ease: 'power2.in',
     onComplete: done,
   })
 }

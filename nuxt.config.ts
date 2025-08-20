@@ -3,7 +3,7 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/content'],
+  modules: ['@nuxt/eslint', '@nuxt/content', '@nuxt/image'],
   devtools: { enabled: true },
   css: ['~/assets/css/global.css'],
 
