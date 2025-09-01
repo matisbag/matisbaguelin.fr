@@ -14,15 +14,15 @@
   },
   "dependencies": {
     "@nuxt/content": "^3.6.3",
-    "@nuxt/eslint": "^1.8.0",
+    "@nuxt/eslint": "^1.9.0",
     "@nuxt/image": "^1.11.0",
-    "eslint": "^9.33.0",
+    "eslint": "^9.34.0",
     "gsap": "^3.13.0",
     "nuxt": "^4.0.3",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@pandacss/dev": "^1.0.1"
+    "@pandacss/dev": "^1.2.0"
   }
 }
