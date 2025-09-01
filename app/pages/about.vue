@@ -1,9 +1,13 @@
+<script setup>
+import { container, prose } from 'styled-system/patterns'
+
+const { data } = await useAsyncData('about', () => {
+  return queryCollection('content').path(`/about`).first()
+})
+</script>
+
 <template>
-  <main :class="container({ paddingTop: '55px' })">
-    <h1>About</h1>
+  <main :class="[container({ paddingTop: '80px' }), prose()]">
+    <ContentRenderer :value="data" />
   </main>
 </template>
-
-<script lang="ts" setup>
-import { container } from 'styled-system/patterns'
-</script>
