@@ -1,46 +1,59 @@
 <template>
   <div
     :class="css({
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3, 1fr)',
-      gap: '2',
-      sm: { gridTemplateColumns: 'repeat(5, 1fr)' },
-      md: { gridTemplateColumns: 'repeat(6, 1fr)' },
-      xl: { gridTemplateColumns: 'repeat(8, 1fr)' },
+      'display': 'grid',
+      'gridTemplateColumns': 'repeat(3, 1fr)',
+      'gap': '2',
+      'sm': { gridTemplateColumns: 'repeat(5, 1fr)' },
+      'md': { gridTemplateColumns: 'repeat(6, 1fr)' },
+      'xl': { gridTemplateColumns: 'repeat(8, 1fr)' },
+      '2xl': { gridTemplateColumns: 'repeat(10, 1fr)' },
     })"
   >
     <div
       v-for="skill in skills"
       :key="skill.name"
       :class="css({
-        bg: 'bg.muted',
-        p: '2.5',
-        borderRadius: 'md',
+        bg: 'bg.muted/40',
+        border: '1px solid',
+        borderColor: 'border/30',
+        p: '3',
+        borderRadius: 'xl',
         display: 'flex',
         flexDirection: 'column',
         gap: '2',
         alignItems: 'center',
         textAlign: 'center',
-        transition: 'all 1.8s ease-in-out',
+        boxShadow: '0 0 8px rgb(0 0 0 / 0.05) inset',
+        transition: 'all 0.3s ease',
         _hover: {
           bg: 'transparent',
+          borderColor: 'border/50',
+          boxShadow: '0 0 12px rgb(0 0 0 / 0.1) inset',
+          transform: 'translateY(-2px)',
         },
       })"
       class="group"
     >
       <Icon
         :name="skill.icon"
-        size="22px"
+        size="28px"
         :class="css({
-          filter: 'drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))',
-          transition: 'all 2s ease-in-out',
+          filter: 'drop-shadow(0 2px 4px rgb(0 0 0 / 0.1))',
+          transition: 'all 0.3s ease',
           _groupHover: {
-            rotate: '360deg',
-            scale: '1.25',
+            scale: '1.1',
           },
         })"
       />
-      <span>{{ skill.name }}</span>
+      <span
+        :class="css({
+          fontSize: 'sm',
+          fontWeight: 'medium',
+        })"
+      >
+        {{ skill.name }}
+      </span>
     </div>
   </div>
 </template>

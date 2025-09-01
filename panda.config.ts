@@ -66,7 +66,8 @@ export default defineConfig({
         },
         transform: props => ({
           '& h1': {
-            fontSize: props.size === 'xl' ? '2.25rem' : props.size === 'lg' ? '2rem' : props.size === 'sm' ? '1.75rem' : '1.875rem',
+            fontFamily: 'heading',
+            fontSize: props.size === 'xl' ? '2.5rem' : props.size === 'lg' ? '2.25rem' : props.size === 'sm' ? '2rem' : '2.125rem',
             fontWeight: '800',
             lineHeight: '1.2',
             marginTop: '0',

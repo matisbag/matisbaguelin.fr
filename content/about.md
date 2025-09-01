@@ -3,8 +3,6 @@ title: "A Propos"
 description: "Découvrez le parcours d'un développeur fullstack passionné par les nouvelles technologies et les bonnes pratiques en développement web."
 ---
 
-# A Propos
-
 > Je suis passionné par les nouvelles technologies, les bonnes pratiques, la rigueur et le développement continu de mes compétences.
 
 Mon parcours en tant que **développeur fullstack** a commencé en **2019**, alors que j'étais en terminale et que je cherchais une école pour poursuivre mes études. C'est à ce moment que j'ai découvert ma passion pour le développement web , et j'ai continué à développer mes compétences lors de mon cursus à l'école [EEMI](https://www.eemi.com/), où j'ai eu l'opportunité de me plonger davantage dans ce monde.
