@@ -46,7 +46,7 @@ onMounted(() => {
       class="subtitle"
       :class="css({ color: 'text.toned', fontSize: 'lg', fontWeight: 'medium', opacity: '0' })"
     >
-      <span :class="css({ color: 'primary' })">Full Stack</span> Developer crafting beautiful, modern front-end experiences ✨
+      <span :class="css({ color: 'primary' })">Front-end</span> Developer — Building with TypeScript & Vue ✨
     </h2>
     <Button
       to="/projects"
