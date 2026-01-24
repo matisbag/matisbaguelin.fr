@@ -14,6 +14,9 @@ export default defineNuxtConfig({
   alias: {
     'styled-system': resolve('./styled-system'),
   },
+  future: {
+    compatibilityVersion: 5,
+  },
   compatibilityDate: '2025-07-15',
 
   postcss: {
