@@ -1,17 +1,17 @@
 ---
-title: "A Propos"
-description: "Découvrez le parcours d'un développeur fullstack passionné par les nouvelles technologies et les bonnes pratiques en développement web."
+title: "About"
+description: "Discover the journey of a fullstack developer passionate about new technologies and best practices in web development."
 ---
 
-> Je suis passionné par les nouvelles technologies, les bonnes pratiques, la rigueur et le développement continu de mes compétences.
+> I am passionate about new technologies, best practices, rigor, and the continuous development of my skills.
 
-Mon parcours en tant que **développeur fullstack** a commencé en **2019**, alors que j'étais en terminale et que je cherchais une école pour poursuivre mes études. C'est à ce moment que j'ai découvert ma passion pour le développement web , et j'ai continué à développer mes compétences lors de mon cursus à l'école [EEMI](https://www.eemi.com/), où j'ai eu l'opportunité de me plonger davantage dans ce monde.
+My journey as a **fullstack developer** began in **2019**, while I was in my final year of high school and looking for a school to continue my studies. That's when I discovered my passion for web development, and I continued to develop my skills during my studies at [EEMI](https://www.eemi.com/), where I had the opportunity to dive deeper into this world.
 
-J'ai eu l'occasion de mettre en pratique mes compétences dans divers projets et entreprise. Ces expériences m'ont permis d'approfondir mes connaissances et de développer une compréhension approfondie des défis et des opportunités dans le domaine du développement web.
+I've had the chance to put my skills into practice through various projects and companies. These experiences have allowed me to deepen my knowledge and develop a thorough understanding of the challenges and opportunities in web development.
 
-Je suis passionné par **l'apprentissage continu** et je reste constamment à l'affût des dernières tendances et technologies dans le domaine du développement. Mon objectif est de créer des applications web innovantes et de haute qualité qui répondent aux besoins et aux attentes des utilisateurs, tout en étant évolutives et maintenables, en suivant les bonnes pratiques de développement.
+I am passionate about **continuous learning** and constantly stay on top of the latest trends and technologies in development. My goal is to create innovative, high-quality web applications that meet users' needs and expectations, while being scalable and maintainable, following development best practices.
 
-## Technologies utilisées
+## Technologies
 
 ::skills
 ::

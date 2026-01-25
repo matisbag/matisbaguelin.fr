@@ -18,7 +18,7 @@ onMounted(() => {
       y: 0,
       duration: 0.8,
       ease: 'back.out(1.7)',
-      stagger: 0.03, // Délai entre chaque caractère
+      stagger: 0.03, // Delay between each character
     },
   )
 
