@@ -14,11 +14,9 @@
       v-for="skill in skills"
       :key="skill.name"
       :class="css({
-        bg: 'bg.muted/40',
-        border: '1px solid',
-        borderColor: 'border/30',
+        bg: 'bg.muted/60',
         p: '3',
-        borderRadius: 'xl',
+        borderRadius: 'lg',
         display: 'flex',
         flexDirection: 'column',
         gap: '2',
@@ -28,7 +26,6 @@
         transition: 'all 0.3s ease',
         _hover: {
           bg: 'transparent',
-          borderColor: 'border/50',
           boxShadow: '0 0 12px rgb(0 0 0 / 0.1) inset',
           transform: 'translateY(-2px)',
         },
