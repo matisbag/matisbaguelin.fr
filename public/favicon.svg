@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700');
+    text { font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
+  </style>
+  <rect width="32" height="32" rx="6" fill="#0a0a0a"/>
+  <text x="16" y="22" text-anchor="middle" font-size="14" fill="#ffffff">MB</text>
+</svg>

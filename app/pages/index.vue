@@ -4,6 +4,15 @@ import { container, stack } from 'styled-system/patterns'
 
 import { SplitText } from 'gsap/SplitText'
 
+useHead({
+  titleTemplate: '',
+  title: 'Matis Baguelin — Front-end Developer',
+})
+
+useSeoMeta({
+  description: 'Front-end developer specializing in TypeScript and Vue.js. Building modern, performant web applications.',
+})
+
 const { $gsap } = useNuxtApp()
 
 onMounted(() => {

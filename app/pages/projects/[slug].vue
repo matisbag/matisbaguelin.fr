@@ -6,6 +6,11 @@ const slug = useRoute().params.slug
 const { data: project } = await useAsyncData(`project-${slug}`, () => {
   return queryCollection('projects').path(`/projects/${slug}`).first()
 })
+
+useSeoMeta({
+  title: () => project.value?.title || 'Project',
+  description: () => project.value?.description,
+})
 </script>
 
 <template>

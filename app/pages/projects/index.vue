@@ -3,6 +3,11 @@ import { container } from 'styled-system/patterns'
 import { css } from 'styled-system/css'
 import { SplitText } from 'gsap/SplitText'
 
+useSeoMeta({
+  title: 'Projects',
+  description: 'Explore my portfolio of web development projects built with TypeScript, Vue.js, Nuxt and other modern technologies.',
+})
+
 const { $gsap } = useNuxtApp()
 
 const { data: projects } = await useAsyncData('projects', () => {

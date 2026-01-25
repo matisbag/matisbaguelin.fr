@@ -3,9 +3,20 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/content', '@nuxt/image', '@nuxt/icon'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/content',
+    '@nuxt/image',
+    '@nuxt/icon',
+    '@nuxtjs/sitemap',
+  ],
+
   devtools: { enabled: true },
   css: ['~/assets/css/global.css'],
+
+  site: {
+    url: 'https://matisbaguelin.fr',
+  },
 
   content: {
     experimental: { nativeSqlite: true },
@@ -23,5 +34,9 @@ export default defineNuxtConfig({
     plugins: {
       '@pandacss/dev/postcss': {},
     },
+  },
+
+  sitemap: {
+    sources: ['/api/__sitemap__/urls'],
   },
 })
