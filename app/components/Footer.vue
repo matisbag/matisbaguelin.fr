@@ -40,7 +40,7 @@ import { css } from 'styled-system/css'
 
 const socialLinks = [
   { name: 'GitHub', url: 'https://github.com/matisbag', icon: 'lucide:github' },
-  { name: 'LinkedIn', url: 'https://linkedin.com/in/matisbaguelin', icon: 'lucide:linkedin' },
+  { name: 'LinkedIn', url: 'https://linkedin.com/in/matis-baguelin', icon: 'lucide:linkedin' },
   { name: 'Email', url: 'mailto:matisbaguelin@gmail.com', icon: 'lucide:mail' },
 ]
 </script>
