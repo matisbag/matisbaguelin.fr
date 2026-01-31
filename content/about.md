@@ -1,15 +1,17 @@
 ---
 title: "About"
-description: "Discover the journey of a fullstack developer passionate about new technologies and best practices in web development."
+description: "Fullstack developer since 2019, specialized in Vue.js and front-end development."
 ---
 
-> I am passionate about new technologies, best practices, rigor, and the continuous development of my skills.
+> Less code, fewer bugs.
 
-My journey as a **fullstack developer** began in **2019**, while I was in my final year of high school and looking for a school to continue my studies. That's when I discovered my passion for web development, and I continued to develop my skills during my studies at [EEMI](https://www.eemi.com/), where I had the opportunity to dive deeper into this world.
+I got into web development in **2019** through OpenClassrooms tutorials. I was already into computers, but that's when I realized I actually enjoyed building stuff for the web. I then studied at [EEMI](https://www.eemi.com/) and kept going from there.
 
-I've had the chance to put my skills into practice through various projects and companies. These experiences have allowed me to deepen my knowledge and develop a thorough understanding of the challenges and opportunities in web development.
+I'm fullstack but I lean more towards **front-end**, especially with **Vue.js**. Right now I'm working on [Sportik](/projects/sportik) with a friend — a platform to help sports clubs manage their members and activities. It's the kind of project where I get to make all the decisions, and that's pretty fun.
 
-I am passionate about **continuous learning** and constantly stay on top of the latest trends and technologies in development. My goal is to create innovative, high-quality web applications that meet users' needs and expectations, while being scalable and maintainable, following development best practices.
+One thing I'm glad about: I learned to code before AI tools became mainstream. The way people learn now feels different, and I think there's value in having figured things out the hard way first.
+
+I care about writing code that's clean and easy to maintain. Nothing fancy, just doing things properly.
 
 ## Technologies
 
