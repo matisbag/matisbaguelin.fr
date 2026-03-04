@@ -131,12 +131,12 @@ const activeSkills = [
   { name: 'Hono', icon: 'logos:hono' },
   { name: 'AdonisJS', icon: 'logos:adonisjs-icon' },
   { name: 'Tailwind', icon: 'logos:tailwindcss-icon' },
+  { name: 'Panda CSS', icon: 'logos:pandacss-icon' },
   { name: 'Storybook', icon: 'logos:storybook-icon' },
   { name: 'pnpm', icon: 'logos:pnpm' },
   { name: 'Claude Code', icon: 'logos:claude-icon' },
   { name: 'Git', icon: 'logos:git-icon' },
   { name: 'GitKraken', icon: 'logos:gitkraken' },
-  { name: 'Linux', icon: 'logos:linux-tux' },
 ]
 
 const pastSkills = [
