@@ -7,6 +7,7 @@
 <script setup>
 useHead({
   htmlAttrs: {
+    'lang': 'en',
     'data-color-mode': 'dark',
   },
   titleTemplate: '%s — Matis Baguelin',
