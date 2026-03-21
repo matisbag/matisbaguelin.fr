@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-import { css } from 'styled-system/css'
-import { ref, onMounted, onUnmounted } from 'vue'
+import { css, cva } from 'styled-system/css'
 
 const links = [
   { name: 'Home', to: '/' },
@@ -30,6 +29,35 @@ const activeLinkClass = css({
   color: 'text',
   fontWeight: 'semibold',
 })
+
+const navVariants = cva({
+  base: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8',
+    py: '1',
+    px: '2',
+    borderRadius: 'full',
+    pointerEvents: 'auto',
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: 'transparent',
+    transition: 'all 0.45s cubic-bezier(0.34, 1.56, 0.64, 1)',
+  },
+  variants: {
+    scrolled: {
+      true: {
+        backdropFilter: 'blur(24px) saturate(180%)',
+        background: 'rgba(20, 20, 20, 0.45)',
+        borderColor: 'rgba(255, 255, 255, 0.08)',
+        boxShadow: '[0 4px 24px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.07)]',
+        py: '2.5',
+        px: '7',
+      },
+      false: {},
+    },
+  },
+})
 </script>
 
 <template>
@@ -46,7 +74,7 @@ const activeLinkClass = css({
       pointerEvents: 'none',
     })"
   >
-    <nav :class="['liquid-header-nav', { 'liquid-header-nav--scrolled': scrolled }]">
+    <nav :class="navVariants({ scrolled })">
       <NuxtLink
         v-for="link in links"
         :key="link.name"
@@ -59,28 +87,3 @@ const activeLinkClass = css({
     </nav>
   </header>
 </template>
-
-<style>
-.liquid-header-nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 4px 8px;
-  border-radius: 9999px;
-  pointer-events: auto;
-  border: 1px solid transparent;
-  transition: all 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.liquid-header-nav--scrolled {
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  background: rgba(20, 20, 20, 0.45);
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.4),
-    0 1px 3px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.07);
-  padding: 10px 28px;
-}
-</style>
