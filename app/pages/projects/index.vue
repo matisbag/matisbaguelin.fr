@@ -12,7 +12,7 @@ const { $gsap } = useNuxtApp()
 
 const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection('projects')
-    .select('title', 'description', 'path', 'id')
+    .select('title', 'description', 'path', 'id', 'date')
     .all()
 })
 
@@ -46,7 +46,7 @@ onMounted(() => {
       duration: 0.6,
       delay: 0.2,
       ease: 'power2.out',
-      stagger: 0.15,
+      stagger: 0.1,
     },
   )
 })
@@ -82,12 +82,17 @@ onMounted(() => {
       </p>
     </div>
 
-    <div :class="css({ display: 'grid', gap: '12' })">
+    <div
+      :class="css({
+        display: 'grid',
+        gridTemplateColumns: { base: '1fr', md: '1fr 1fr' },
+        gap: '6',
+      })"
+    >
       <ProjectCard
-        v-for="(project, index) in projects"
+        v-for="project in projects"
         :key="project.id"
         :project="project"
-        :index="index"
         :class="css({ opacity: '0' })"
         class="project-card"
       />

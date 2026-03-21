@@ -11,6 +11,7 @@ export default defineContentConfig({
       source: 'projects/*.md',
       schema: z.object({
         repository: z.string().optional(),
+        date: z.string().optional(),
       }),
     }),
   },
