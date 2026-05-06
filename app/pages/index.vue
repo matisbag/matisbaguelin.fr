@@ -6,14 +6,18 @@ import { SplitText } from 'gsap/SplitText'
 
 useHead({
   titleTemplate: '',
-  title: 'Matis Baguelin — Front-end Developer',
+  title: 'Matis Baguelin — Full Stack Developer',
 })
 
 useSeoMeta({
-  description: 'Front-end developer specializing in TypeScript and Vue.js. Building modern, performant web applications.',
+  description: 'Full Stack developer specializing in TypeScript and Vue.js. Building modern, performant web applications.',
 })
 
 const { $gsap } = useNuxtApp()
+
+const roles = ['Front-end', 'Full Stack']
+const currentRole = ref(roles[0])
+const roleEl = ref<HTMLElement>()
 
 onMounted(() => {
   $gsap.set('.title', { opacity: 1 })
@@ -40,6 +44,26 @@ onMounted(() => {
     { opacity: 0, y: 20 },
     { opacity: 1, y: 0, duration: 0.5, delay: 0.8, ease: 'power2.out' },
   )
+
+  let index = 0
+  const interval = setInterval(() => {
+    $gsap.to(roleEl.value!, {
+      y: -16,
+      opacity: 0,
+      duration: 0.35,
+      ease: 'power2.in',
+      onComplete: () => {
+        index = (index + 1) % roles.length
+        currentRole.value = roles[index]
+        $gsap.fromTo(roleEl.value!,
+          { y: 16, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.35, ease: 'power2.out' },
+        )
+      },
+    })
+  }, 2500)
+
+  onBeforeUnmount(() => clearInterval(interval))
 })
 </script>
 
@@ -55,7 +79,12 @@ onMounted(() => {
       class="subtitle"
       :class="css({ color: 'text.toned', fontSize: 'lg', fontWeight: 'medium', opacity: '0' })"
     >
-      <span :class="css({ color: 'primary' })">Front-end</span> Developer — Building with TypeScript & Vue ✨
+      <span
+        ref="roleEl"
+        :class="css({ color: 'primary', display: 'inline-block', minWidth: '85.28px', fontWeight: 'semibold' })"
+      >
+        {{ currentRole }}
+      </span> Developer — Building with TypeScript & Vue ✨
     </h2>
     <Button
       to="/projects"

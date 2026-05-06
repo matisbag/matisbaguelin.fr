@@ -5,7 +5,7 @@ import { SplitText } from 'gsap/SplitText'
 
 useSeoMeta({
   title: 'About',
-  description: 'Learn more about Matis Baguelin, a front-end developer passionate about TypeScript, Vue.js and building great user experiences.',
+  description: 'Learn more about Matis Baguelin, a Full Stack developer passionate about TypeScript, Vue.js and building great user experiences.',
 })
 
 const { $gsap } = useNuxtApp()
